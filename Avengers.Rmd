@@ -111,6 +111,8 @@ raw_avengers_tibble_3 <- raw_avengers_tibble_2 %>%
       )
   )
 
+
+
 # separate pairs "number-charater name" in 2 columns 
 # (in df$winner and df$looser)
 fights_tidy <- raw_avengers_tibble_3 %>%
@@ -122,8 +124,8 @@ fights_tidy <- raw_avengers_tibble_3 %>%
   
   # convert cols winner_n and loser_n in numbers
   mutate(
-    winner_n = strtoi(winner_n), 
-    loser_n = strtoi(loser_n)/divide_loser_n_by
+    winner_n = as.double(winner_n), 
+    loser_n = as.double(loser_n)/divide_loser_n_by
     ) %>% 
   
   
