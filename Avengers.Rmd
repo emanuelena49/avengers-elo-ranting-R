@@ -131,7 +131,7 @@ fights_tidy <- raw_avengers_tibble_3 %>%
   select(everything(), -one_of(c("divide_loser_n_by")))
 
 # undercase and remove spaces in names
-fights_tidy <- fights_tidy %>% 
+fights_tidy_ <- fights_tidy %>% 
   mutate(
     winner_charater= str_to_lower(str_replace_all(winner_charater, " ", "")), 
     loser_charater= str_to_lower(str_replace_all(loser_charater, " " , "")), 
@@ -241,7 +241,8 @@ fights_elo_format_readable <-
   fights_tidy_clear %>% 
   filter(number_integer_rows > 0) %>%
   group_by(id) %>%
-  expand(count = seq(1:number_integer_rows), winner=winner_charater, loser=loser_charater, score=1) %>%
+  expand(count = seq(1:number_integer_rows), winner=winner_charater, loser=loser_charater, score=1, 
+         movie=movie, comment=comment) %>%
   
   bind_rows(
     
@@ -254,7 +255,7 @@ fights_elo_format_readable <-
         score = extra, 
       ) %>% 
       mutate(count = number_integer_rows + 1) %>%
-      select(id, count, winner, loser, score)
+      select(id, count, winner, loser, score, movie, comment)
   ) %>%
   
   arrange(id, count)
@@ -356,7 +357,7 @@ scores <-
 
 
 
-ggplot(data=scores %>% head(), mapping = aes(x=reorder(charater, -score), y=score)) +
+ggplot(data=scores %>% head(), mapping = aes(x=reorder(charater, -score), y=score, fill=charater)) +
   geom_bar(stat="identity")
 
 print(scores)
