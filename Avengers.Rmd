@@ -112,7 +112,6 @@ raw_avengers_tibble_3 <- raw_avengers_tibble_2 %>%
   )
 
 
-
 # separate pairs "number-charater name" in 2 columns 
 # (in df$winner and df$looser)
 fights_tidy <- raw_avengers_tibble_3 %>%
@@ -130,6 +129,13 @@ fights_tidy <- raw_avengers_tibble_3 %>%
   
   
   select(everything(), -one_of(c("divide_loser_n_by")))
+
+# undercase and remove spaces in names
+fights_tidy <- fights_tidy %>% 
+  mutate(
+    winner_charater= str_to_lower(str_replace_all(winner_charater, " ", "")), 
+    loser_charater= str_to_lower(str_replace_all(loser_charater, " " , "")), 
+  )
 
 ```
 
@@ -156,52 +162,12 @@ all_charaters <-
   mutate(id=row_number()) %>%
   select(id, everything())
 
+# save the dataset
+write.csv(all_charaters, "charaters.csv")
+
 ```
 
 
-### Specific Charater and random dudes
-```{r}
-
-# isolate specific charaters
-specific_charaters <- 
-  
-  raw_avengers_tibble_2 %>%
-  filter(!str_detect(winner, "-")) %>%
-  select(winner)%>%
-  rename(charater=winner) %>%
-  
-  bind_rows(
-    raw_avengers_tibble %>%
-    filter(!str_detect(loser, "-")) %>%
-    select(loser)%>%
-    rename(charater=loser)
-  )%>%
-  distinct()
-
-# isolate random dudes
-random_dudes <- all_charaters %>% 
-  anti_join(specific_charaters, by="charater")
-
-# create charaters table
-all_charaters_w_types <- all_charaters %>%
-  
-  # add "specific charater" label
-  left_join(
-    specific_charaters %>%
-      mutate(charater_type="specific charater")
-    , by="charater"
-  ) %>%
-  
-  # add "specific charater" label
-  mutate(
-    charater_type=ifelse(is.na(charater_type), "random dude", charater_type)
-    )
-
-
-
-print(all_charaters_w_types)
-  
-```
 
 ### Victories, lossen, ecc...
 ```{r}
@@ -320,6 +286,9 @@ fights_elo_format <- fights_elo_format_readable %>%
   # set correct var names
   rename(White=winner_id, Black=loser_id, Score=score)
 
+# save the dataset
+write.csv(fights_elo_format, "fights_elo_format.csv")
+
 fights_elo_format
     
 ```
@@ -395,6 +364,12 @@ print(scores)
 
 
 ```
+
+```{r}
+
+
+```
+
 
 
 
