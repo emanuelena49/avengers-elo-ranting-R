@@ -7,8 +7,25 @@ output: pdf_document
 # cache results
 # knitr::opts_chunk$set(cache=TRUE, echo = FALSE, eval = FALSE, message=FALSE, warning = FALSE, fig.align='center')
 ```
+# Avengers ELO Rating
 
-## Libraries and functions
+![https://www.flickr.com/photos/tales2astonish/6976086962](img/avengers.jpg)
+
+# Inspirations
+
+## Dragon Ball Power Levels
+
+TODO...
+
+## The ELO Alghorithm
+
+$$
+\begin{array}{lll}
+r_{i} & \leftarrow & r_i + \kappa (s_{i,j} - \mu_{i,j}) 
+\\
+r_j & \leftarrow & r_j + \kappa (s_{j,i} - \mu_{j,i})
+\end{array}
+$$
 
 ```{r}
 # library to read the excell file
@@ -24,6 +41,7 @@ library(dplyr)
 # for regular expressions 
 library(stringr)
 
+# library for graphs
 library(ggplot2)
 
 
@@ -31,9 +49,9 @@ library(ggplot2)
 # https://stackoverflow.com/a/12945838
 read_excel_allsheets <- function(filename, tibble = TRUE) {
   
-    sheets <- readxl::excel_sheets(filename)
+    sheets <- excel_sheets(filename)
     
-    x <- lapply(sheets, function(X) readxl::read_excel(filename, sheet = X))
+    x <- lapply(sheets, function(X) read_excel(filename, sheet = X))
     
     if(!tibble) x <- lapply(x, as.data.frame)
     
@@ -44,17 +62,23 @@ read_excel_allsheets <- function(filename, tibble = TRUE) {
 
 ```
 
+---
 
+# Building my Dataframe
+## My sample
 
-## Read Data
-
-lorem ipsum ...
-
+Movies:
 ```{r}
+
 # read excell dataset
 # (now I have a list of tibbles)
 raw_avengers_list_of_tibble <- read_excel_allsheets("Avengers.xlsx")
 
+names(raw_avengers_list_of_tibble)
+```
+
+Dataset Structure:
+```{r}
 # turn the list of tibble in one single tibble
 raw_avengers_tibble <- 
   bind_rows(raw_avengers_list_of_tibble, .id="movie") %>%
@@ -62,18 +86,66 @@ raw_avengers_tibble <-
   mutate(id = row_number()) %>%
   select(id, everything())
 
+head(raw_avengers_tibble, n=10)
+```
+
+---
+
+## The concept of fight
+
+```{r}
+# (select only id winner and loser to print some clear samples)
+rat_s <- raw_avengers_tibble %>% select(id, winner, loser)
 ```
 
 
-## Tidy the df
+I have different variants of fights:
 
-Before making the real analysis, I need to tidy my df. In detail I need to...
-
-TODO: LIST
-
-### Manage (winner) charater lists
+* 1 vs 1
 ```{r}
+rat_s %>% filter(id==13)
+```
+* 1 vs many
+```{r}
+rat_s %>% filter(id==49)
+```
+* many vs 1 (or many vs many) 
+```{r}
+rat_s %>% filter(id==34 | id==30)
+```
+* more than one winner
+```{r}
+rat_s %>% filter(id==23)
+```
+* partial damange
+```{r}
+rat_s %>% filter(id==93)
+```
 
+---
+
+# Data Manipulations
+## Tools
+
+Libraries:
+```{r}
+library(readxl) # lib to read the excell file
+library(tidyr)  # lib to make to extract the (intentionally) dirty dataset
+library(dplyr)  # library to have tibbles and manipulate thes easier
+
+library(stringr)  # library to manipulate strings, in particular I need it 
+                  # for some regular expressions 
+
+library(ggplot2)  # library for graphs
+```
+
+## Data Tiding
+
+* Separate rows with "charater 1,charater 2,..." into more partial victories (w 1/n "winning rate")
+* Turn values with singular charaters into "1-charater" 
+* separate pairs "n-charaters" in 2 columns
+
+```{r}
 
 # split rows were winner is a list of charater
 raw_avengers_tibble_2 <- raw_avengers_tibble %>%
@@ -81,14 +153,6 @@ raw_avengers_tibble_2 <- raw_avengers_tibble %>%
     divide_loser_n_by = str_count(winner, ",")+1,
   ) %>% 
   separate_rows(winner, sep=",")
-
-
-```
-
-
-
-### Manage "number-charater" pairs
-```{r}
 
 # replace "charater" with "1-charater" in df$winner and df$looser
 raw_avengers_tibble_3 <- raw_avengers_tibble_2 %>%
@@ -127,24 +191,18 @@ fights_tidy <- raw_avengers_tibble_3 %>%
     loser_n = as.double(loser_n)/divide_loser_n_by
     ) %>% 
   
-  
+  # order columns
   select(everything(), -one_of(c("divide_loser_n_by")))
 
-# undercase and remove spaces in names
-fights_tidy_ <- fights_tidy %>% 
-  mutate(
-    winner_charater= str_to_lower(str_replace_all(winner_charater, " ", "")), 
-    loser_charater= str_to_lower(str_replace_all(loser_charater, " " , "")), 
-  )
+fights_tidy
 
 ```
 
+## Charater list + general statistics
 
-## Some ramndom statistics about the data frame
-
-
-### A list of all the charaters
 ```{r}
+
+# Charater list  ----
 all_charaters <- 
   
   # all winners
@@ -165,14 +223,8 @@ all_charaters <-
 # save the dataset
 write.csv(all_charaters, "charaters.csv")
 
-```
 
-
-
-### Victories, lossen, ecc...
-```{r}
-
-# statistics for each charater
+# statistics for each charater ----
 
 # add wins statistics foreach charater
 all_charaters_statistics <- fights_tidy %>% 
@@ -215,12 +267,27 @@ all_charaters_statistics
 
 ```
 
+## Prepare the dataframe for ELO
 
-## Classifing avengers with ELO
+### Expected Format
+```{r}
+fights_tidy 
+```
+### Actual Dataset Format
+```{r}
+fights_tidy
+```
 
+I decided to apply this algorithm:
 
-### Prepare the df for elo
+* Winner goes always in White, Loser goes always in Black => score will be always be a numbers in (0,1]
+* given n winners and m losers, I will have...
+  + m/n lines where White=winner, Black=loser, Score=1
+  + (eventually) one line with White=winner, Black=loser and  $$Score=\frac{rest(\frac{m}{n})}{n} * 0.5 + 0.5$$
+  
+---
 
+### Dataset in ELO Format
 ```{r}
 
 # remove fights where the number of winners/losers is unknow
@@ -258,6 +325,7 @@ fights_elo_format_readable <-
       select(id, count, winner, loser, score, movie, comment)
   ) %>%
   
+  # order by id
   arrange(id, count)
 
 
@@ -287,15 +355,17 @@ fights_elo_format <- fights_elo_format_readable %>%
   # set correct var names
   rename(White=winner_id, Black=loser_id, Score=score)
 
-# save the dataset
+# save the dataset (for shiny app)
 write.csv(fights_elo_format, "fights_elo_format.csv")
 
 fights_elo_format
     
 ```
 
+---
 
-### The ELO Algorithm
+# ELO Classification
+
 
 ```{r}
 
@@ -342,8 +412,9 @@ elo = function(games, z = 400, k = 25) {
 
 ```
 
+## Results and comments
 
-### First test
+### Results
 ```{r}
 
 scores_list <- elo(as.data.frame(fights_elo_format))
@@ -361,15 +432,38 @@ ggplot(data=scores %>% head(), mapping = aes(x=reorder(charater, -score), y=scor
   geom_bar(stat="identity")
 
 print(scores)
-
-
-
 ```
 
+---
+
+### Problems
+
+* Inappropriate Alghoritm (?)
+* Inappropriate fit of data for ELO
+* "Implicit Strenghts" (ex. Giant Chitauri)
 ```{r}
-
-
+scores %>% filter(str_detect(charater, regex("Giant")))
 ```
+
+* "Cinematic Distorsion" (ex. US Army Soldiers)
+```{r}
+scores %>% filter(str_detect(charater, regex("(Soldier)|(Agent)|civilian")))
+```
+
+
+## Correlation Score-Fights
+
+## Correlation Score-Screen Time
+
+# Shiny App
+
+
+
+
+
+### The ELO Algorithm
+
+### First test
 
 
 
