@@ -417,7 +417,17 @@ elo = function(games, z = 400, k = 25) {
 
 ## Results and comments
 
-### Results
+### And the winner is ...
+
+---- 
+
+### ... Iron Man!
+![https://www.pinterest.it/pin/842173199049318100/](img/iron-man.jpg)
+
+----
+
+### All Results
+
 ```{r}
 
 scores_list <- elo(as.data.frame(fights_elo_format))
