@@ -1,11 +1,11 @@
 ---
 title: "Avengers ELO Analysis"
 author: "Emanuele Lena - 142411"
-output: pdf_document
+output: html_document
 ---
 ```{r setup, include=FALSE}
 # cache results
-# knitr::opts_chunk$set(cache=TRUE, echo = FALSE, eval = FALSE, message=FALSE, warning = FALSE, fig.align='center')
+knitr::opts_chunk$set(echo = FALSE, eval = TRUE, message=FALSE, warning = FALSE, fig.align='center')
 ```
 # Avengers ELO Rating
 
@@ -43,6 +43,9 @@ library(stringr)
 
 # library for graphs
 library(ggplot2)
+
+# library for some correlation analysis
+library(modelr)
 
 
 # read all the sheets
@@ -192,7 +195,7 @@ fights_tidy <- raw_avengers_tibble_3 %>%
     ) %>% 
   
   # order columns
-  select(everything(), -one_of(c("divide_loser_n_by")))
+  select(id, winner_n, winner_charater, loser_n, loser_charater, movie, comment, terrain_winner, terrain_loser)
 
 fights_tidy
 
@@ -260,7 +263,7 @@ all_charaters_statistics <- fights_tidy %>%
   left_join(all_charaters, by="charater") %>%
 
   # order columns
-  select(charater,n_fights, n_win, n_lose)
+  select(id, charater,n_fights, n_win, n_lose)
 
 all_charaters_statistics
 
@@ -422,7 +425,7 @@ scores_list <- elo(as.data.frame(fights_elo_format))
 scores <- 
   tibble(score = scores_list) %>%
   mutate(id = row_number()) %>%
-  select(id, everything()) %>%
+  select(id,everything()) %>%
   left_join(all_charaters, by="id") %>%
   arrange(-score)
 
@@ -438,33 +441,77 @@ print(scores)
 
 ### Problems
 
-* Inappropriate Alghoritm (?)
-* Inappropriate fit of data for ELO
-* "Implicit Strenghts" (ex. Giant Chitauri)
+* "Implicit Strenghts" (ex. Giant Chitauri, Military veicles, ecc...)
 ```{r}
-scores %>% filter(str_detect(charater, regex("Giant")))
+scores %>% filter(str_detect(charater, regex("(Chitauri Giant)|(Pepper Potts)|(Fighter)|(Elicopter)")))
 ```
 
-* "Cinematic Distorsion" (ex. US Army Soldiers)
-```{r}
-scores %>% filter(str_detect(charater, regex("(Soldier)|(Agent)|civilian")))
-```
+* "Cinematic Distorsion" (some charaters are too much "in the spotlight")
 
+----
 
 ## Correlation Score-Fights
 
+Now I try to find a correlation between score and fights results
+```{r}
+
+cor_score_fights <- scores %>%
+  left_join(all_charaters_statistics, by=c("id"))
+
+
+# ggplot(data=cor_score_fights) +
+#  geom_point(mapping=aes(x=n_fights, y=score, color="grey")) +
+#  geom_point(mapping=aes(x=n_win, y=score, color="green")) +
+#  geom_point(mapping=aes(x=n_lose, y=score, color="red"))
+
+cor_score_fights %>%
+  summarise(
+    cor_score_tot=cor(score, n_fights), 
+    cor_score_win=cor(score, n_win),
+    cor_score_lose=cor(score,n_lose)
+  )
+
+```
+
+
 ## Correlation Score-Screen Time
+
+```{r}
+
+screen_times <- read_excel("screen_times.xlsx")
+
+cor_score_screen_time <- scores %>%
+  inner_join(screen_times, by="charater") %>% # inner to ignore all unmatched cols
+  select(id, charater, score, screen_time)
+
+cor_score_screen_time
+
+# linear model
+mod <- lm(score~screen_time, data=cor_score_screen_time)
+cor_score_screen_time <- cor_score_screen_time %>% add_predictions(mod)
+
+ggplot(data=cor_score_screen_time, mapping=aes(x=screen_time, y=score)) +
+  geom_line(aes(y = pred)) +
+  geom_point() +
+  ggrepel::geom_label_repel(aes(label = charater,
+                  box.padding   = 0.35, 
+                  point.padding = 0.5,
+                  segment.color = 'grey50')) + 
+  xlab("Screen Time [seconds]") + ylab("ELO Score")
+
+
+# source ggrepel code: https://stackoverflow.com/a/48762376/7695333
+
+cor(cor_score_screen_time$screen_time, cor_score_screen_time$score)
+
+```
+
+
+(source screen times: https://www.youtube.com/watch?v=XE0HwXz43WQ)
 
 # Shiny App
 
-
-
-
-
-### The ELO Algorithm
-
-### First test
-
+TODO: LINK
 
 
 
