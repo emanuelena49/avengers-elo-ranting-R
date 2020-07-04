@@ -1,21 +1,22 @@
 ---
-title: "Avengers ELO Analysis"
+title: "Avengers ELO Rating"
 author: "Emanuele Lena - 142411"
-output: html_document
+output: ioslides_presentation
+fig_width: 6 
+fig_height: 4 
 ---
 ```{r setup, include=FALSE}
 # cache results
 knitr::opts_chunk$set(echo = FALSE, eval = TRUE, message=FALSE, warning = FALSE, fig.align='center')
 ```
-# Avengers ELO Rating
-
-![https://www.flickr.com/photos/tales2astonish/6976086962](img/avengers.jpg)
 
 # Inspirations
 
+![https://www.flickr.com/photos/tales2astonish/6976086962](img/avengers.jpg)
+
 ## Dragon Ball Power Levels
 
-TODO...
+![https://www.pinterest.it/pin/812899801474131186/](img/power level.jpg)
 
 ## The ELO Alghorithm
 
@@ -27,6 +28,13 @@ r_j & \leftarrow & r_j + \kappa (s_{j,i} - \mu_{j,i})
 \end{array}
 $$
 
+
+---
+
+# Building my Dataframe
+## My sample
+
+### Movies
 ```{r}
 # library to read the excell file
 library(readxl)
@@ -47,7 +55,11 @@ library(ggplot2)
 # library for some correlation analysis
 library(modelr)
 
+# library to print df in a cool way
+library(knitr)
 
+# set print option
+knit_print.data.frame <- kable
 # read all the sheets
 # https://stackoverflow.com/a/12945838
 read_excel_allsheets <- function(filename, tibble = TRUE) {
@@ -63,24 +75,17 @@ read_excel_allsheets <- function(filename, tibble = TRUE) {
     return(x)
 }
 
-```
-
----
-
-# Building my Dataframe
-## My sample
-
-Movies:
-```{r}
-
 # read excell dataset
 # (now I have a list of tibbles)
 raw_avengers_list_of_tibble <- read_excel_allsheets("Avengers.xlsx")
 
-names(raw_avengers_list_of_tibble)
+names(raw_avengers_list_of_tibble) %>% kable(col.names = c("My movies:"))
 ```
 
-Dataset Structure:
+
+---
+
+### Dataset Structure
 ```{r}
 # turn the list of tibble in one single tibble
 raw_avengers_tibble <- 
@@ -89,12 +94,14 @@ raw_avengers_tibble <-
   mutate(id = row_number()) %>%
   select(id, everything())
 
-head(raw_avengers_tibble, n=10)
+head(raw_avengers_tibble, n=10) %>% kable()
 ```
 
 ---
 
 ## The concept of fight
+
+### Variants
 
 ```{r}
 # (select only id winner and loser to print some clear samples)
@@ -106,28 +113,42 @@ I have different variants of fights:
 
 * 1 vs 1
 ```{r}
-rat_s %>% filter(id==13)
+rat_s %>% filter(id==13) %>% kable()
 ```
+
 * 1 vs many
 ```{r}
-rat_s %>% filter(id==49)
+rat_s %>% filter(id==49) %>% kable()
 ```
+
+---
+
+### More Variants
+
 * many vs 1 (or many vs many) 
 ```{r}
-rat_s %>% filter(id==34 | id==30)
+rat_s %>% filter(id==34 | id==30) %>% kable()
 ```
+
 * more than one winner
 ```{r}
-rat_s %>% filter(id==23)
+rat_s %>% filter(id==23) %>% kable()
 ```
+
+---
+
+### More Variants (2)
+
 * partial damange
 ```{r}
-rat_s %>% filter(id==93)
+rat_s %>% filter(id==93) %>% kable()
 ```
 
 ---
 
 # Data Manipulations
+
+<!--
 ## Tools
 
 Libraries:
@@ -141,13 +162,18 @@ library(stringr)  # library to manipulate strings, in particular I need it
 
 library(ggplot2)  # library for graphs
 ```
+-->
 
 ## Data Tiding
+### Operations
 
 * Separate rows with "charater 1,charater 2,..." into more partial victories (w 1/n "winning rate")
 * Turn values with singular charaters into "1-charater" 
 * separate pairs "n-charaters" in 2 columns
 
+---
+
+### Results
 ```{r}
 
 # split rows were winner is a list of charater
@@ -197,9 +223,11 @@ fights_tidy <- raw_avengers_tibble_3 %>%
   # order columns
   select(id, winner_n, winner_charater, loser_n, loser_charater, movie, comment, terrain_winner, terrain_loser)
 
-fights_tidy
+fights_tidy %>% select(id, winner_n, winner_charater, loser_n, loser_charater) %>% kable()
 
 ```
+
+---
 
 ## Charater list + general statistics
 
@@ -225,7 +253,6 @@ all_charaters <-
 
 # save the dataset
 write.csv(all_charaters, "charaters.csv")
-
 
 # statistics for each charater ----
 
@@ -265,28 +292,43 @@ all_charaters_statistics <- fights_tidy %>%
   # order columns
   select(id, charater,n_fights, n_win, n_lose)
 
-all_charaters_statistics
+all_charaters_statistics %>% kable()
 
 
 ```
+
+---
 
 ## Prepare the dataframe for ELO
 
 ### Expected Format
 ```{r}
-fights_tidy 
-```
-### Actual Dataset Format
-```{r}
-fights_tidy
+expected <- tibble(
+  White = c(15, 22, 140), 
+  Black = c(44, 16, 90), 
+  Score = c(1, 0, 0.5)
+)
+
+expected %>% kable()
 ```
 
+---
+
+### Actual Dataset Format
+```{r}
+head(fights_tidy %>% select(winner_n, winner_charater, loser_n, loser_charater), n=5) %>% kable()
+```
+
+---
+
+### My Choices
 I decided to apply this algorithm:
 
 * Winner goes always in White, Loser goes always in Black => score will be always be a numbers in (0,1]
 * given n winners and m losers, I will have...
   + m/n lines where White=winner, Black=loser, Score=1
   + (eventually) one line with White=winner, Black=loser and  $$Score=\frac{rest(\frac{m}{n})}{n} * 0.5 + 0.5$$
+* (Instead of charater names, I should use IDs)
   
 ---
 
@@ -361,14 +403,13 @@ fights_elo_format <- fights_elo_format_readable %>%
 # save the dataset (for shiny app)
 write.csv(fights_elo_format, "fights_elo_format.csv")
 
-fights_elo_format
+fights_elo_format %>% select(White, winner, Black, loser, Score) %>%  kable()
     
 ```
 
 ---
 
 # ELO Classification
-
 
 ```{r}
 
@@ -415,6 +456,8 @@ elo = function(games, z = 400, k = 25) {
 
 ```
 
+---
+
 ## Results and comments
 
 ### And the winner is ...
@@ -426,7 +469,7 @@ elo = function(games, z = 400, k = 25) {
 
 ----
 
-### All Results
+### Top 10 Charaters
 
 ```{r}
 
@@ -437,28 +480,48 @@ scores <-
   mutate(id = row_number()) %>%
   select(id,everything()) %>%
   left_join(all_charaters, by="id") %>%
-  arrange(-score)
+  arrange(-score) %>%
+  select(id, charater, score)
 
 
 
-ggplot(data=scores %>% head(), mapping = aes(x=reorder(charater, -score), y=score, fill=charater)) +
-  geom_bar(stat="identity")
+ggplot(data=scores %>% head(n=10), mapping = aes(x=reorder(charater, -score), y=score, fill=charater)) +
+  geom_bar(stat="identity") + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  ylab("ELO Score") + xlab("Charater")
 
-print(scores)
 ```
+
+---
+
+### All Data
+```{r}
+head(scores,n=5) %>% kable()
+```
+
+---
+
+![Something has gone wrong...](img/pepper fighter chitauri.jpg)
 
 ---
 
 ### Problems
 
-* "Implicit Strenghts" (ex. Giant Chitauri, Military veicles, ecc...)
-```{r}
-scores %>% filter(str_detect(charater, regex("(Chitauri Giant)|(Pepper Potts)|(Fighter)|(Elicopter)")))
-```
-
+* Inappropriate algorith/data manipulation methods
 * "Cinematic Distorsion" (some charaters are too much "in the spotlight")
 
-----
+---
+
+### Problems (2)
+
+* "Implicit Strenghts" (ex. Giant Chitauri, Military veicles, ecc...)
+
+```{r}
+scores %>% filter(str_detect(charater, regex("(Chitauri Giant)|(Pepper Potts)|(Fighter)|(Elicopter)"))) %>% kable()
+```
+
+
+---
 
 ## Correlation Score-Fights
 
@@ -479,23 +542,34 @@ cor_score_fights %>%
     cor_score_tot=cor(score, n_fights), 
     cor_score_win=cor(score, n_win),
     cor_score_lose=cor(score,n_lose)
-  )
+  ) %>% kable()
 
 ```
 
+---
 
 ## Correlation Score-Screen Time
-
+### Screen Times
 ```{r}
 
 screen_times <- read_excel("screen_times.xlsx")
 
 cor_score_screen_time <- scores %>%
   inner_join(screen_times, by="charater") %>% # inner to ignore all unmatched cols
-  select(id, charater, score, screen_time)
+  select(id, charater, score, screen_time) %>% 
+  arrange(-screen_time)
 
-cor_score_screen_time
+head(cor_score_screen_time,n=5) %>% kable()
+```
 
+```{r}
+cor(cor_score_screen_time$screen_time, cor_score_screen_time$score)
+```
+
+---
+
+### Plot + Linear model
+```{r}
 # linear model
 mod <- lm(score~screen_time, data=cor_score_screen_time)
 cor_score_screen_time <- cor_score_screen_time %>% add_predictions(mod)
@@ -512,12 +586,12 @@ ggplot(data=cor_score_screen_time, mapping=aes(x=screen_time, y=score)) +
 
 # source ggrepel code: https://stackoverflow.com/a/48762376/7695333
 
-cor(cor_score_screen_time$screen_time, cor_score_screen_time$score)
 
 ```
 
-
 (source screen times: https://www.youtube.com/watch?v=XE0HwXz43WQ)
+
+---
 
 # Shiny App
 

@@ -195,9 +195,9 @@
 "194",92,1,"US Army Soldier","Betty Ross",1,"L'incredibile Hulk","battaglia università - prima della trasformazione",8,20
 "195",93,1,"US Army Soldier","Hulk",0.51,"L'incredibile Hulk","battaglia università - hulk vs fanteria",8,17
 "196",94,1,"US Army Soldier","Hulk",0.51,"L'incredibile Hulk","battaglia università - hulk vs fanteria",8,17
-"197",94,1," 50 caliber jeep","Hulk",0.55,"L'incredibile Hulk","battaglia università - hulk vs fanteria",21,17
-"198",95,1,"Hulk","50 caliber jeep",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,72
-"199",96,1,"Hulk","50 caliber jeep",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,72
+"197",94,1,"50 caliber jeep","Hulk",0.55,"L'incredibile Hulk","battaglia università - hulk vs fanteria",21,17
+"198",95,1,"Hulk","50 caliber jeep",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,21
+"199",96,1,"Hulk","50 caliber jeep",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,21
 "200",97,1,"Hulk","US Army Soldier",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,8
 "201",97,2,"Hulk","US Army Soldier",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,8
 "202",97,3,"Hulk","US Army Soldier",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,8
@@ -221,8 +221,8 @@
 "220",109,1,"US Army Soldier","Bruce Banner",1,"L'incredibile Hulk","battaglia finale città - laboratorio di Samuel Sterns",8,19
 "221",110,1,"Emil Blomsky","Betty Ross",1,"L'incredibile Hulk","battaglia finale città - laboratorio di Samuel Sterns",18,20
 "222",111,1,"Emil Blomsky","US Army Soldier",1,"L'incredibile Hulk","battaglia finale città - nascita di Abominio",18,8
-"223",112,1,"Emil Blomsky","Samuel Sterns",1,"L'incredibile Hulk","battaglia finale città - nascita di Abominio",18,73
-"224",113,1,"Abominio","Samuel Sterns",1,"L'incredibile Hulk","battaglia finale città - nascita di Abominio",24,73
+"223",112,1,"Emil Blomsky","Samuel Sterns",1,"L'incredibile Hulk","battaglia finale città - nascita di Abominio",18,72
+"224",113,1,"Abominio","Samuel Sterns",1,"L'incredibile Hulk","battaglia finale città - nascita di Abominio",24,72
 "225",114,1,"Abominio","policeman",1,"L'incredibile Hulk","battaglia finale città - nascita di Abominio",24,41
 "226",115,1,"Abominio","US Army Soldier",1,"L'incredibile Hulk","battaglia finale città - nascita di Abominio",24,8
 "227",116,1,"Abominio","car",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,38
@@ -264,7 +264,7 @@
 "263",137,1,"Abominio","Hulk",1,"L'incredibile Hulk","battaglia finale città - Hulk vs Abominio (tetto)",24,17
 "264",138,1,"Abominio","Hulk",1,"L'incredibile Hulk","battaglia finale città - Hulk vs Abominio (tetto)",24,17
 "265",139,1,"Hulk","Abominio",1,"L'incredibile Hulk","battaglia finale città - Hulk vs Abominio (tetto)",17,24
-"266",140,1,"Laufey","acient ship",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",26,74
+"266",140,1,"Laufey","acient ship",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",26,73
 "267",142,1,"Laufey","civilian",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",26,1
 "268",142,2,"Laufey","civilian",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",26,1
 "269",142,3,"Laufey","civilian",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",26,1
@@ -293,7 +293,7 @@
 "292",152,1,"Destroyer","Ice Giant",1,"Thor","tentativo furto tesseract giganti di ghiaccio",30,27
 "293",152,2,"Destroyer","Ice Giant",1,"Thor","tentativo furto tesseract giganti di ghiaccio",30,27
 "294",152,3,"Destroyer","Ice Giant",1,"Thor","tentativo furto tesseract giganti di ghiaccio",30,27
-"295",153,1,"Thor","Grundroth",1,"Thor","Attacco a Jotunn - inizio battaglia",31,75
+"295",153,1,"Thor","Grundroth",1,"Thor","Attacco a Jotunn - inizio battaglia",31,74
 "296",154,1,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",31,27
 "297",154,2,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",31,27
 "298",154,3,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",31,27
@@ -467,7 +467,7 @@
 "466",200,15,"Destroyer","Shield Agent",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",30,42
 "467",201,1,"Destroyer","car",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",30,38
 "468",201,2,"Destroyer","car",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",30,38
-"469",202,1,"Destroyer","Jasper Sitwell",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",30,76
+"469",202,1,"Destroyer","Jasper Sitwell",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",30,75
 "470",203,1,"Destroyer","Philip Coulson",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",30,54
 "471",204,1,"Destroyer","car",1,"Thor","Attacco del Distruttore - attacco alla cittadina",30,38
 "472",204,2,"Destroyer","car",1,"Thor","Attacco del Distruttore - attacco alla cittadina",30,38
@@ -506,28 +506,28 @@
 "505",234,1,"Iron Man","Ivan Vanko",1,"Iron Man 2","monaco gran prix attack - scontro con armatura",11,45
 "506",235,1,"Tony Stark","Happy Hogan",1,"Iron Man 2","scena pugilato",47,46
 "507",236,1,"Black Widow","Happy Hogan",1,"Iron Man 2","scena pugilato",48,46
-"508",237,1,"Ivan Vanko","prisoner",1,"Iron Man 2","Ivan Vanko fuga prigione",45,77
+"508",237,1,"Ivan Vanko","prisoner",1,"Iron Man 2","Ivan Vanko fuga prigione",45,76
 "509",238,1,"Ivan Vanko","policeman",1,"Iron Man 2","Ivan Vanko fuga prigione",45,41
 "510",239,1,"Iron Man","War Machine",1,"Iron Man 2","festa compleanno",11,49
 "511",240,1,"War Machine","Iron Man",1,"Iron Man 2","festa compleanno",49,11
 "512",242,1,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,50
 "513",243,1,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,50
 "514",244,1,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,50
-"515",245,1,"Ivan Vanko","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",45,78
-"516",245,2,"Ivan Vanko","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",45,78
-"517",246,1,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,78
-"518",246,2,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,78
-"519",246,3,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,78
-"520",246,4,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,78
-"521",246,5,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,78
-"522",246,6,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,78
-"523",246,7,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,78
-"524",246,8,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,78
-"525",246,9,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,78
-"526",246,10,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,78
-"527",246,11,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,78
-"528",246,12,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,78
-"529",247,1,"Happy Hogan","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",46,78
+"515",245,1,"Ivan Vanko","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",45,77
+"516",245,2,"Ivan Vanko","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",45,77
+"517",246,1,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,77
+"518",246,2,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,77
+"519",246,3,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,77
+"520",246,4,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,77
+"521",246,5,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,77
+"522",246,6,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,77
+"523",246,7,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,77
+"524",246,8,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,77
+"525",246,9,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,77
+"526",246,10,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,77
+"527",246,11,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,77
+"528",246,12,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",48,77
+"529",247,1,"Happy Hogan","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",46,77
 "530",248,1,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,50
 "531",249,1,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,50
 "532",249,2,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,50
@@ -598,13 +598,13 @@
 "597",260,1,"Loki","car",1,"Avengers","Scena iniziale laboratorio Shield",35,38
 "598",261,1,"Loki","Shield Agent",1,"Avengers","Scena iniziale laboratorio Shield",35,42
 "599",261,2,"Loki","Shield Agent",1,"Avengers","Scena iniziale laboratorio Shield",35,42
-"600",262,1,"Loki","Elicopter",1,"Avengers","Scena iniziale laboratorio Shield",35,79
+"600",262,1,"Loki","Elicopter",1,"Avengers","Scena iniziale laboratorio Shield",35,78
 "601",263,1,"terrorist","Black Widow",0.55,"Avengers","Interrogatorio Black Widow",10,48
-"602",264,1,"Black Widow","Georgi Lukov",1,"Avengers","Interrogatorio Black Widow",48,80
+"602",264,1,"Black Widow","Georgi Lukov",1,"Avengers","Interrogatorio Black Widow",48,79
 "603",265,1,"Black Widow","terrorist",1,"Avengers","Interrogatorio Black Widow",48,10
 "604",265,2,"Black Widow","terrorist",1,"Avengers","Interrogatorio Black Widow",48,10
-"605",266,1,"Hawkeye","guard",1,"Avengers","Opera - incursione di Loki",51,81
-"606",266,2,"Hawkeye","guard",1,"Avengers","Opera - incursione di Loki",51,81
+"605",266,1,"Hawkeye","guard",1,"Avengers","Opera - incursione di Loki",51,80
+"606",266,2,"Hawkeye","guard",1,"Avengers","Opera - incursione di Loki",51,80
 "607",267,1,"Loki","civilian",1,"Avengers","Opera - incursione di Loki",35,1
 "608",267,2,"Loki","civilian",1,"Avengers","Opera - incursione di Loki",35,1
 "609",268,1,"Loki","car",1,"Avengers","Opera - incursione di Loki",35,38

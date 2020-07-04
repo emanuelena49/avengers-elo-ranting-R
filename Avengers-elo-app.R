@@ -160,7 +160,9 @@ server <- function(input, output) {
       
       ylim(min(st$score), max(st$score)) +
       
-      ylab("ELO score") + xlab("Personaggio")
+      ylab("ELO score") + xlab("Personaggio") + 
+      
+      theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
     
   })
   
