@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = FALSE, eval = TRUE, message=FALSE, warning = FALSE,
 
 ## Objective
 
-Classify the streght of Marvel Cinematic Universe charaters using ELO algorithm
+Classify the streght of Marvel Cinematic Universe characters using ELO algorithm
 
 # Inspirations
 
@@ -39,7 +39,7 @@ $$
 \frac{10^{r_i / \zeta}}{10^{r_i / \zeta} + 10^{r_j / \zeta}} \\\\
 \end{array}
 $$
-* actual score of a player: r_i
+* actual score of a player: $r_i$
 * a learing rate k 
 
 # Building my Dataset
@@ -88,7 +88,7 @@ read_excel_allsheets <- function(filename, tibble = TRUE) {
 
 # read excell dataset
 # (now I have a list of tibbles)
-raw_avengers_list_of_tibble <- read_excel_allsheets("Avengers.xlsx")
+raw_avengers_list_of_tibble <- read_excel_allsheets("datasets/Avengers.xlsx")
 
 names(raw_avengers_list_of_tibble) %>% kable(col.names = c("My movies:"))
 ```
@@ -173,23 +173,23 @@ library(ggplot2)  # library for graphs
 ## Data Tiding
 ### Operations
 
-* Separate rows with "charater 1,charater 2,..." into more partial victories (w 1/n "winning rate")
-* Turn values with singular charaters into "1-charater" 
-* separate pairs "n-charaters" in 2 columns
+* Separate rows with "character 1,character 2,..." into more partial victories (w 1/n "winning rate")
+* Turn values with singular characters into "1-character" 
+* separate pairs "n-characters" in 2 columns
 
 ---
 
 ### Results
 ```{r}
 
-# split rows were winner is a list of charater
+# split rows were winner is a list of character
 raw_avengers_tibble_2 <- raw_avengers_tibble %>%
   mutate(
     divide_loser_n_by = str_count(winner, ",")+1,
   ) %>% 
   separate_rows(winner, sep=",")
 
-# replace "charater" with "1-charater" in df$winner and df$looser
+# replace "character" with "1-character" in df$winner and df$looser
 raw_avengers_tibble_3 <- raw_avengers_tibble_2 %>%
   
   # mutate in winner
@@ -211,14 +211,14 @@ raw_avengers_tibble_3 <- raw_avengers_tibble_2 %>%
   )
 
 
-# separate pairs "number-charater name" in 2 columns 
+# separate pairs "number-character name" in 2 columns 
 # (in df$winner and df$looser)
 fights_tidy <- raw_avengers_tibble_3 %>%
   
   # separate winner
-  separate(winner, into=c("winner_n", "winner_charater"), sep="-") %>%
+  separate(winner, into=c("winner_n", "winner_character"), sep="-") %>%
   # separate loser
-  separate(loser, into=c("loser_n", "loser_charater"), sep="-") %>%
+  separate(loser, into=c("loser_n", "loser_character"), sep="-") %>%
   
   # convert cols winner_n and loser_n in numbers
   mutate(
@@ -227,59 +227,59 @@ fights_tidy <- raw_avengers_tibble_3 %>%
     ) %>% 
   
   # order columns
-  select(id, winner_n, winner_charater, loser_n, loser_charater, movie, comment, terrain_winner, terrain_loser)
+  select(id, winner_n, winner_character, loser_n, loser_character, movie, comment, terrain_winner, terrain_loser)
 
-fights_tidy %>% select(id, winner_n, winner_charater, loser_n, loser_charater) %>% kable()
+fights_tidy %>% select(id, winner_n, winner_character, loser_n, loser_character) %>% kable()
 
 ```
 
 
-## Charater list + general statistics
+## Character list + general statistics
 
 ```{r}
 
-# Charater list  ----
-all_charaters <- 
+# Character list  ----
+all_characters <- 
   
   # all winners
   fights_tidy %>%
-  select(winner_charater) %>% 
-  rename(charater=winner_charater) %>%
+  select(winner_character) %>% 
+  rename(character=winner_character) %>%
   
   bind_rows(
     # all losers
     fights_tidy %>%
-      select(loser_charater) %>% 
-      rename(charater=loser_charater) 
+      select(loser_character) %>% 
+      rename(character=loser_character) 
   ) %>%
   distinct() %>%
   mutate(id=row_number()) %>%
   select(id, everything())
 
 # save the dataset
-write.csv(all_charaters, "charaters.csv")
+write.csv(all_characters, "datasets/characters.csv")
 
-# statistics for each charater ----
+# statistics for each character ----
 
-# add wins statistics foreach charater
-all_charaters_statistics <- fights_tidy %>% 
-  group_by(winner_charater) %>%
+# add wins statistics foreach character
+all_characters_statistics <- fights_tidy %>% 
+  group_by(winner_character) %>%
   summarise(
     n_win = n(), 
   ) %>%
-  rename(charater=winner_charater) %>%
+  rename(character=winner_character) %>%
   
-  # add loss statistics foreach charater
+  # add loss statistics foreach character
   full_join(
     
     fights_tidy %>% 
-      group_by(loser_charater) %>%
+      group_by(loser_character) %>%
       summarise(
         n_lose = n()
       ) %>%
-      rename(charater=loser_charater), 
+      rename(character=loser_character), 
     
-    by= "charater"
+    by= "character"
   ) %>% 
   
   # replace NA values with 0
@@ -291,13 +291,13 @@ all_charaters_statistics <- fights_tidy %>%
   # arrange by fights number
   arrange(-n_fights) %>%
 
-  # add charater type label
-  left_join(all_charaters, by="charater") %>%
+  # add character type label
+  left_join(all_characters, by="character") %>%
 
   # order columns
-  select(id, charater,n_fights, n_win, n_lose)
+  select(id, character,n_fights, n_win, n_lose)
 
-all_charaters_statistics %>% kable()
+all_characters_statistics %>% kable()
 
 
 ```
@@ -318,20 +318,18 @@ expected %>% kable()
 
 ### Actual Dataset Format
 ```{r}
-head(fights_tidy %>% select(winner_n, winner_charater, loser_n, loser_charater), n=5) %>% kable()
+head(fights_tidy %>% select(winner_n, winner_character, loser_n, loser_character), n=5) %>% kable()
 ```
 
 ---
 
 ### My Choices
 
-I decided to apply this algorithm:
-
 * Winner goes always in White, Loser goes always in Black => score will be always be a numbers in (0.5,1]
 * given n winners and m losers, I will have...
   + m/n lines where White=winner, Black=loser, Score=1
   + (eventually) one line with White=winner, Black=loser and  $$Score=\frac{rest(\frac{m}{n})}{n} * 0.5 + 0.5$$
-* (Instead of charater names, I should use IDs)
+* (Instead of character names, I should use IDs)
   
 ---
 
@@ -356,7 +354,7 @@ fights_elo_format_readable <-
   fights_tidy_clear %>% 
   filter(number_integer_rows > 0) %>%
   group_by(id) %>%
-  expand(count = seq(1:number_integer_rows), winner=winner_charater, loser=loser_charater, score=1, 
+  expand(count = seq(1:number_integer_rows), winner=winner_character, loser=loser_character, score=1, 
          movie=movie, comment=comment) %>%
   
   bind_rows(
@@ -365,8 +363,8 @@ fights_elo_format_readable <-
     fights_tidy_clear %>% 
       filter(extra>0) %>%
       rename(
-        winner = winner_charater, 
-        loser = loser_charater, 
+        winner = winner_character, 
+        loser = loser_character, 
         score = extra, 
       ) %>% 
       mutate(count = number_integer_rows + 1) %>%
@@ -384,19 +382,19 @@ fights_elo_format_readable <- fights_elo_format_readable %>%
     score=0.5 + score/2
   )
 
-# insert charater ids
+# insert character ids
 fights_elo_format_readable <- fights_elo_format_readable %>%
   
   # set the id of winner
   left_join(
-    all_charaters %>% rename(winner_id = id), 
-    by=c("winner"="charater")
+    all_characters %>% rename(winner_id = id), 
+    by=c("winner"="character")
   ) %>%
   
   # # set the id of winner
   left_join(
-    all_charaters %>% rename(loser_id = id), 
-    by=c("loser"="charater")
+    all_characters %>% rename(loser_id = id), 
+    by=c("loser"="character")
   )
   
 fights_elo_format <- fights_elo_format_readable %>%
@@ -404,7 +402,7 @@ fights_elo_format <- fights_elo_format_readable %>%
   rename(White=winner_id, Black=loser_id, Score=score)
 
 # save the dataset (for shiny app)
-write.csv(fights_elo_format, "fights_elo_format.csv")
+write.csv(fights_elo_format, "datasets/fights_elo_format.csv")
 
 fights_elo_format %>% select(White, winner, Black, loser, Score) %>%  kable()
     
@@ -468,7 +466,7 @@ elo = function(games, z = 400, k = 25) {
 
 ---
 
-### Top 10 Charaters
+### Top 10 Characters
 
 ```{r}
 
@@ -478,16 +476,16 @@ scores <-
   tibble(score = scores_list) %>%
   mutate(id = row_number()) %>%
   select(id,everything()) %>%
-  left_join(all_charaters, by="id") %>%
+  left_join(all_characters, by="id") %>%
   arrange(-score) %>%
-  select(id, charater, score)
+  select(id, character, score)
 
 
 
-ggplot(data=scores %>% head(n=10), mapping = aes(x=reorder(charater, -score), y=score, fill=charater)) +
+ggplot(data=scores %>% head(n=10), mapping = aes(x=reorder(character, -score), y=score, fill=character)) +
   geom_bar(stat="identity") + 
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
-  ylab("ELO Score") + xlab("Charater")
+  ylab("ELO Score") + xlab("Character")
 
 ```
 
@@ -498,13 +496,12 @@ ggplot(data=scores %>% head(n=10), mapping = aes(x=reorder(charater, -score), y=
 head(scores,n=5) %>% kable()
 ```
 
----
 
 ![Something has gone wrong...](img/pepper fighter chitauri.jpg)
 ---
 
 ```{r}
-scores %>% filter(str_detect(charater, regex("(Chitauri Giant)|(Pepper Potts)|(Fighter)|(Elicopter)"))) %>% kable()
+scores %>% filter(str_detect(character, regex("(Chitauri Giant)|(Pepper Potts)|(Fighter)|(Elicopter)"))) %>% kable()
 ```
 
 ---
@@ -513,7 +510,7 @@ scores %>% filter(str_detect(charater, regex("(Chitauri Giant)|(Pepper Potts)|(F
 
 * Inappropriate algorith
 * data gathering and/or manipulation methods
-* "Cinematic Distorsion" (some charaters are too much "in the spotlight")
+* "Cinematic Distorsion" (some characters are too much "in the spotlight")
 * "Implicit Strenghts" (ex. Giant Chitauri, Military veicles, ecc...)
 
 
@@ -523,7 +520,7 @@ Now I try to find a correlation between score and fights results
 ```{r}
 
 cor_score_fights <- scores %>%
-  left_join(all_charaters_statistics, by=c("id"))
+  left_join(all_characters_statistics, by=c("id"))
 
 
 # ggplot(data=cor_score_fights) +
@@ -544,19 +541,17 @@ cor_score_fights %>%
 ### Screen Times
 ```{r}
 
-screen_times <- read_excel("screen_times.xlsx")
+screen_times <- read_excel("datasets/screen_times.xlsx")
 
 cor_score_screen_time <- scores %>%
-  inner_join(screen_times, by="charater") %>% # inner to ignore all unmatched cols
-  select(id, charater, score, screen_time) %>% 
+  inner_join(screen_times, by="character") %>% # inner to ignore all unmatched cols
+  select(id, character, score, screen_time) %>% 
   arrange(-screen_time)
 
 head(cor_score_screen_time,n=5) %>% kable()
 ```
 
-```{r}
-cor(cor_score_screen_time$screen_time, cor_score_screen_time$score)
-```
+
 
 ---
 
@@ -569,7 +564,7 @@ cor_score_screen_time <- cor_score_screen_time %>% add_predictions(mod)
 ggplot(data=cor_score_screen_time, mapping=aes(x=screen_time, y=score)) +
   geom_line(aes(y = pred)) +
   geom_point() +
-  ggrepel::geom_label_repel(aes(label = charater,
+  ggrepel::geom_label_repel(aes(label = character,
                   box.padding   = 0.35, 
                   point.padding = 0.5,
                   segment.color = 'grey50')) + 
@@ -581,12 +576,33 @@ ggplot(data=cor_score_screen_time, mapping=aes(x=screen_time, y=score)) +
 
 ```
 
-(source screen times: https://www.youtube.com/watch?v=XE0HwXz43WQ)
+```{r}
+cor(cor_score_screen_time$screen_time, cor_score_screen_time$score)
+```
 
 # Shiny App
 
 TODO: LINK
 
+## All links
+
+* git repo: https://github.com/emanuelena49/avengers-elo-ranting-R 
+* 
+
+## Data Sources
+
+* The first 6 MCU movies
+* Some youtube videos that count all the deaths in those movies (very helpful for 1 vs many fights):
+ +  https://www.youtube.com/watch?v=fEP9Z3dq0TM EVERY DEATH IN #6 Iron Man (2008)
+ +  https://www.youtube.com/watch?v=KOGSX_9tUtg The Incredible Hulk (2008) Carnage Count
+ +  https://www.youtube.com/watch?v=TO7XClpPZJ0 EVERY DEATH IN #8 Iron Man 2 (2010)
+ 
+## Data Sources (2)
+
+ +  https://www.youtube.com/watch?v=aHMXdnbhIZI EVERY DEATH IN #9 Thor (2011)
+ +  https://www.youtube.com/watch?v=_LblVsWaEBY EVERY DEATH IN #11 Captain America: The First Avenger (2011)
+ +  https://www.youtube.com/watch?v=rPeuwkHxeQI EVERY DEATH IN #12 The Avengers (2012)
++ source screen times: https://www.youtube.com/watch?v=XE0HwXz43WQ)
 
 
 

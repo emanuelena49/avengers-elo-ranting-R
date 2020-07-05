@@ -1,0 +1,829 @@
+"","id","count","winner","loser","Score","movie","comment","White","Black"
+"1",1,1,"civilian","Steve Rogers",1,"Captain America","scena bullo cinema",1,59
+"2",2,1,"Bucky","civilian",1,"Captain America","scena bullo cinema",2,1
+"3",3,1,"Red Skull","civilian",1,"Captain America","scena scoperta cubo",3,1
+"4",4,1,"Hydra soldier","US Army Soldier",1,"Captain America","scena creazione captain america",4,8
+"5",5,1,"Hydra soldier","Abrahm Eskine",0.666666666666667,"Captain America","scena creazione captain america",4,60
+"6",6,1,"US Army Soldier WW2","Hydra soldier",1,"Captain America","scena creazione captain america",5,4
+"7",7,1,"Peggy Carter","Hydra soldier",1,"Captain America","scena creazione captain america",6,4
+"8",8,1,"Captain America","Hydra soldier",1,"Captain America","scena creazione captain america",7,4
+"9",9,1,"Red Skull","nazi soldier",1,"Captain America","scena visita ufficiali a base Teschio Rosso",3,61
+"10",9,2,"Red Skull","nazi soldier",1,"Captain America","scena visita ufficiali a base Teschio Rosso",3,61
+"11",9,3,"Red Skull","nazi soldier",1,"Captain America","scena visita ufficiali a base Teschio Rosso",3,61
+"12",10,1,"Captain America","Hydra soldier",1,"Captain America","scena liberazione prigionieri",7,4
+"13",10,2,"Captain America","Hydra soldier",1,"Captain America","scena liberazione prigionieri",7,4
+"14",10,3,"Captain America","Hydra soldier",1,"Captain America","scena liberazione prigionieri",7,4
+"15",10,4,"Captain America","Hydra soldier",1,"Captain America","scena liberazione prigionieri",7,4
+"16",10,5,"Captain America","Hydra soldier",1,"Captain America","scena liberazione prigionieri",7,4
+"17",11,1,"cap team","Hydra soldier",1,"Captain America","scena liberazione prigionieri",9,4
+"18",11,2,"cap team","Hydra soldier",1,"Captain America","scena liberazione prigionieri",9,4
+"19",11,3,"cap team","Hydra soldier",1,"Captain America","scena liberazione prigionieri",9,4
+"20",11,4,"cap team","Hydra soldier",1,"Captain America","scena liberazione prigionieri",9,4
+"21",12,1,"Captain America","Hydra soldier",1,"Captain America","scena liberazione prigionieri",7,4
+"22",12,2,"Captain America","Hydra soldier",1,"Captain America","scena liberazione prigionieri",7,4
+"23",12,3,"Captain America","Hydra soldier",1,"Captain America","scena liberazione prigionieri",7,4
+"24",12,4,"Captain America","Hydra soldier",1,"Captain America","scena liberazione prigionieri",7,4
+"25",12,5,"Captain America","Hydra soldier",1,"Captain America","scena liberazione prigionieri",7,4
+"26",13,1,"Captain America","Red Skull",1,"Captain America","scena liberazione prigionieri",7,3
+"27",14,1,"Captain America","Hydra soldier",1,"Captain America","scena missioni contro hydra - bosco",7,4
+"28",14,2,"Captain America","Hydra soldier",1,"Captain America","scena missioni contro hydra - bosco",7,4
+"29",14,3,"Captain America","Hydra soldier",1,"Captain America","scena missioni contro hydra - bosco",7,4
+"30",16,1,"cap team","Hydra Tank",1,"Captain America","scena missioni contro hydra - bosco",9,62
+"31",17,1,"Bucky","Hydra soldier",1,"Captain America","scena missioni contro hydra - carro",2,4
+"32",18,1,"Captain America","Hydra soldier",1,"Captain America","scena missioni contro hydra - carro",7,4
+"33",18,2,"Captain America","Hydra soldier",1,"Captain America","scena missioni contro hydra - carro",7,4
+"34",18,3,"Captain America","Hydra soldier",1,"Captain America","scena missioni contro hydra - carro",7,4
+"35",19,1,"Captain America","Hydra Super Tank",0.75,"Captain America","scena missioni contro hydra - carro",7,63
+"36",19,1,"cap team","Hydra Super Tank",0.75,"Captain America","scena missioni contro hydra - carro",9,63
+"37",20,1,"Red Skull","Hydra soldier",1,"Captain America","scena missioni contro hydra - carro",3,4
+"38",21,1,"Bucky","Hydra soldier",1,"Captain America","scena missioni contro hydra - treno",2,4
+"39",21,2,"Bucky","Hydra soldier",1,"Captain America","scena missioni contro hydra - treno",2,4
+"40",22,1,"Captain America","Hydra soldier",1,"Captain America","scena missioni contro hydra - treno",7,4
+"41",23,1,"Captain America","Hydra soldier",0.75,"Captain America","scena missioni contro hydra - treno",7,4
+"42",23,1,"Bucky","Hydra soldier",0.75,"Captain America","scena missioni contro hydra - treno",2,4
+"43",24,1,"Hydra soldier","Captain America",1,"Captain America","scena missioni contro hydra - treno",4,7
+"44",25,1,"Hydra soldier","Bucky",1,"Captain America","scena missioni contro hydra - treno",4,2
+"45",26,1,"Captain America","Hydra soldier",1,"Captain America","scena missioni contro hydra - treno",7,4
+"46",27,1,"cap team","Dr. Zola",1,"Captain America","scena missioni contro hydra - treno",9,64
+"47",28,1,"cap team","Hydra soldier",1,"Captain America","scena missioni contro hydra - treno",9,4
+"48",29,1,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"49",29,2,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"50",29,3,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"51",29,4,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"52",29,5,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"53",29,6,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"54",29,7,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"55",29,8,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"56",29,9,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"57",29,10,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"58",29,11,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"59",29,12,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"60",29,13,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"61",29,14,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"62",29,15,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"63",29,16,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"64",29,17,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"65",29,18,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"66",29,19,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"67",29,20,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"68",29,21,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - attacco cap moto",7,4
+"69",30,1,"Hydra soldier","Captain America",0.51,"Captain America","attacco base principale hydra - attacco cap moto",4,7
+"70",31,1,"cap team","Hydra soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",9,4
+"71",31,1,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",7,4
+"72",31,2,"cap team","Hydra soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",9,4
+"73",31,2,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",7,4
+"74",31,3,"cap team","Hydra soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",9,4
+"75",31,3,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",7,4
+"76",31,4,"cap team","Hydra soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",9,4
+"77",31,4,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",7,4
+"78",31,5,"cap team","Hydra soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",9,4
+"79",31,5,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",7,4
+"80",31,6,"Captain America","Hydra soldier",0.75,"Captain America","attacco base principale hydra - arrivo rinforzi",7,4
+"81",31,6,"cap team","Hydra soldier",0.75,"Captain America","attacco base principale hydra - arrivo rinforzi",9,4
+"82",32,1,"cap team","Hydra soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",9,4
+"83",32,2,"cap team","Hydra soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",9,4
+"84",33,1,"Hydra soldier","US Army Soldier",0.65,"Captain America","attacco base principale hydra - arrivo rinforzi",4,8
+"85",34,1,"US Army Soldier WW2","Hydra Soldier",0.81,"Captain America","attacco base principale hydra - arrivo rinforzi",5,65
+"86",35,1,"Red Skull","US Army Soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",3,8
+"87",35,2,"Red Skull","US Army Soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",3,8
+"88",35,3,"Red Skull","US Army Soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",3,8
+"89",35,4,"Red Skull","US Army Soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",3,8
+"90",36,1,"US Army Soldier","Hydra soldier",0.75,"Captain America","attacco base principale hydra - arrivo rinforzi",8,4
+"91",37,1,"Peggy Carter","Hydra soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",6,4
+"92",38,1,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",7,4
+"93",38,2,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",7,4
+"94",38,3,"Captain America","Hydra soldier",1,"Captain America","attacco base principale hydra - arrivo rinforzi",7,4
+"95",38,4,"Captain America","Hydra soldier",0.75,"Captain America","attacco base principale hydra - arrivo rinforzi",7,4
+"96",40,1,"Captain America","Hydra soldier",1,"Captain America","scontro finale aereo",7,4
+"97",40,2,"Captain America","Hydra soldier",1,"Captain America","scontro finale aereo",7,4
+"98",40,3,"Captain America","Hydra soldier",1,"Captain America","scontro finale aereo",7,4
+"99",40,4,"Captain America","Hydra soldier",1,"Captain America","scontro finale aereo",7,4
+"100",41,1,"Captain America","Hydra soldier",1,"Captain America","scontro finale aereo",7,4
+"101",42,1,"Red Skull","Captain America",1,"Captain America","scontro finale aereo",3,7
+"102",43,1,"Captain America","Red Skull",1,"Captain America","scontro finale aereo",7,3
+"103",44,1,"Red Skull","Captain America",1,"Captain America","scontro finale aereo",3,7
+"104",45,1,"Captain America","Red Skull",1,"Captain America","scontro finale aereo",7,3
+"105",46,1,"Captain America","Shield Agent",1,"Captain America","risveglio",7,48
+"106",46,2,"Captain America","Shield Agent",1,"Captain America","risveglio",7,48
+"107",49,1,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"108",49,2,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"109",49,3,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"110",49,4,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"111",49,5,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"112",49,6,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"113",49,7,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"114",49,8,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"115",49,9,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"116",49,10,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"117",49,11,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"118",50,1,"terrorist","Ho Yinsen",0.55,"Iron Man","fuga caverna",10,66
+"119",51,1,"Iron Man","Raza",1,"Iron Man","fuga caverna",11,67
+"120",52,1,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"121",52,2,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"122",52,3,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"123",52,4,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"124",52,5,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"125",52,6,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"126",52,7,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"127",52,8,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"128",52,9,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"129",52,10,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"130",52,11,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"131",52,12,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"132",52,13,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"133",52,14,"Iron Man","terrorist",1,"Iron Man","fuga caverna",11,10
+"134",54,1,"terrorist","civilian",0.666666666666667,"Iron Man","palmira - scontro a terra",10,1
+"135",55,1,"Iron Man","terrorist",1,"Iron Man","palmira - scontro a terra",11,10
+"136",55,2,"Iron Man","terrorist",1,"Iron Man","palmira - scontro a terra",11,10
+"137",55,3,"Iron Man","terrorist",1,"Iron Man","palmira - scontro a terra",11,10
+"138",55,4,"Iron Man","terrorist",1,"Iron Man","palmira - scontro a terra",11,10
+"139",55,5,"Iron Man","terrorist",1,"Iron Man","palmira - scontro a terra",11,10
+"140",55,6,"Iron Man","terrorist",1,"Iron Man","palmira - scontro a terra",11,10
+"141",55,7,"Iron Man","terrorist",1,"Iron Man","palmira - scontro a terra",11,10
+"142",55,8,"Iron Man","terrorist",1,"Iron Man","palmira - scontro a terra",11,10
+"143",55,9,"Iron Man","terrorist",1,"Iron Man","palmira - scontro a terra",11,10
+"144",56,1,"Iron Man","Abu Bakaar",1,"Iron Man","palmira - scontro a terra",11,68
+"145",57,1,"Tank","Iron Man",1,"Iron Man","palmira - in volo",12,11
+"146",58,1,"Iron Man","Tank",1,"Iron Man","palmira - in volo",11,12
+"147",59,1,"Iron Man","terrorist",1,"Iron Man","palmira - in volo",11,10
+"148",59,2,"Iron Man","terrorist",1,"Iron Man","palmira - in volo",11,10
+"149",59,3,"Iron Man","terrorist",1,"Iron Man","palmira - in volo",11,10
+"150",59,4,"Iron Man","terrorist",1,"Iron Man","palmira - in volo",11,10
+"151",59,5,"Iron Man","terrorist",1,"Iron Man","palmira - in volo",11,10
+"152",59,6,"Iron Man","terrorist",1,"Iron Man","palmira - in volo",11,10
+"153",59,7,"Iron Man","terrorist",1,"Iron Man","palmira - in volo",11,10
+"154",60,1,"Fighter","Iron Man",0.55,"Iron Man","palmira - inseguimento f22",13,11
+"155",61,1,"Iron Man","Fighter",1,"Iron Man","palmira - inseguimento f22",11,13
+"156",61,2,"Iron Man","Fighter",1,"Iron Man","palmira - inseguimento f22",11,13
+"157",62,1,"Obadiah Stane (Iron Monger)","Raza",1,"Iron Man","recupero mark 1 Obadiah",14,67
+"158",64,1,"Obadiah Stane (Iron Monger)","Tony Stark",1,"Iron Man","Obadiah ruba reattore",14,28
+"159",65,1,"Obadiah Stane (Iron Monger)","Shield Agent",1,"Iron Man","scontro finale Iron Man vs Iron Monger - laboratorio",14,48
+"160",65,2,"Obadiah Stane (Iron Monger)","Shield Agent",1,"Iron Man","scontro finale Iron Man vs Iron Monger - laboratorio",14,48
+"161",65,3,"Obadiah Stane (Iron Monger)","Shield Agent",1,"Iron Man","scontro finale Iron Man vs Iron Monger - laboratorio",14,48
+"162",66,1,"Obadiah Stane (Iron Monger)","Philip Coulson",1,"Iron Man","scontro finale Iron Man vs Iron Monger - laboratorio",14,54
+"163",67,1,"Iron Man","Obadiah Stane (Iron Monger)",1,"Iron Man","scontro finale Iron Man vs Iron Monger - autostrada",11,14
+"164",68,1,"Obadiah Stane (Iron Monger)","car",1,"Iron Man","scontro finale Iron Man vs Iron Monger - autostrada",14,44
+"165",68,2,"Obadiah Stane (Iron Monger)","car",1,"Iron Man","scontro finale Iron Man vs Iron Monger - autostrada",14,44
+"166",69,1,"Iron Man","Obadiah Stane (Iron Monger)",1,"Iron Man","scontro finale Iron Man vs Iron Monger - autostrada",11,14
+"167",70,1,"Obadiah Stane (Iron Monger)","civilian",1,"Iron Man","scontro finale Iron Man vs Iron Monger - autostrada",14,1
+"168",71,1,"Obadiah Stane (Iron Monger)","Iron Man",1,"Iron Man","scontro finale Iron Man vs Iron Monger - autostrada",14,11
+"169",72,1,"Iron Man","Obadiah Stane (Iron Monger)",1,"Iron Man","scontro finale Iron Man vs Iron Monger - volo",11,14
+"170",73,1,"Iron Man","Obadiah Stane (Iron Monger)",1,"Iron Man","scontro finale Iron Man vs Iron Monger - tetto laboratorio",11,14
+"171",74,1,"Obadiah Stane (Iron Monger)","Iron Man",1,"Iron Man","scontro finale Iron Man vs Iron Monger - tetto laboratorio",14,11
+"172",75,1,"Iron Man","Obadiah Stane (Iron Monger)",0.75,"Iron Man","scontro finale Iron Man vs Iron Monger - tetto laboratorio",11,14
+"173",75,1,"Pepper Potts","Obadiah Stane (Iron Monger)",0.75,"Iron Man","scontro finale Iron Man vs Iron Monger - tetto laboratorio",16,14
+"174",76,1,"Hulk","civilian",1,"L'incredibile Hulk","scena iniziale - esperimento",17,1
+"175",76,2,"Hulk","civilian",1,"L'incredibile Hulk","scena iniziale - esperimento",17,1
+"176",77,1,"Hulk","Betty Ross",1,"L'incredibile Hulk","scena iniziale - esperimento",17,20
+"177",78,1,"Hulk","General Ross",1,"L'incredibile Hulk","scena iniziale - esperimento",17,69
+"178",79,1,"Hulk","US Army Soldier",1,"L'incredibile Hulk","scena iniziale - esperimento",17,8
+"179",80,1,"Hulk","policeman",1,"L'incredibile Hulk","(scena solo descritta da Ross)",17,47
+"180",81,1,"Hulk","armed civilian",1,"L'incredibile Hulk","(scena solo descritta da Ross)",17,70
+"181",81,2,"Hulk","armed civilian",1,"L'incredibile Hulk","(scena solo descritta da Ross)",17,70
+"182",82,1,"Emil Blomsky","dog",1,"L'incredibile Hulk","tentativo di cattura Brasile - casa di Bruce Banner",18,71
+"183",83,1,"civilian","Bruce Banner",0.666666666666667,"L'incredibile Hulk","tentativo di cattura Brasile -fabbrica banner normale",1,19
+"184",84,1,"Bruce Banner","civilian",1,"L'incredibile Hulk","tentativo di cattura Brasile -fabbrica banner normale",19,1
+"185",85,1,"civilian","Bruce Banner",0.75,"L'incredibile Hulk","tentativo di cattura Brasile -fabbrica banner normale",1,19
+"186",86,1,"Hulk","civilian",1,"L'incredibile Hulk","tentativo di cattura Brasile -fabbrica trasformazione in hulk",17,1
+"187",87,1,"Hulk","civilian",1,"L'incredibile Hulk","tentativo di cattura Brasile -fabbrica trasformazione in hulk",17,1
+"188",88,1,"Hulk","US Army Soldier",1,"L'incredibile Hulk","tentativo di cattura Brasile -fabbrica trasformazione in hulk",17,8
+"189",88,2,"Hulk","US Army Soldier",1,"L'incredibile Hulk","tentativo di cattura Brasile -fabbrica trasformazione in hulk",17,8
+"190",89,1,"Hulk","US Army Soldier",1,"L'incredibile Hulk","tentativo di cattura Brasile -fabbrica trasformazione in hulk",17,8
+"191",89,2,"Hulk","US Army Soldier",1,"L'incredibile Hulk","tentativo di cattura Brasile -fabbrica trasformazione in hulk",17,8
+"192",90,1,"Hulk","Emil Blomsky",1,"L'incredibile Hulk","tentativo di cattura Brasile -fabbrica trasformazione in hulk",17,18
+"193",91,1,"Betty Ross","US Army Soldier",1,"L'incredibile Hulk","battaglia università - prima della trasformazione",20,8
+"194",92,1,"US Army Soldier","Betty Ross",1,"L'incredibile Hulk","battaglia università - prima della trasformazione",8,20
+"195",93,1,"US Army Soldier","Hulk",0.51,"L'incredibile Hulk","battaglia università - hulk vs fanteria",8,17
+"196",94,1,"US Army Soldier","Hulk",0.51,"L'incredibile Hulk","battaglia università - hulk vs fanteria",8,17
+"197",94,1,"50 caliber jeep","Hulk",0.55,"L'incredibile Hulk","battaglia università - hulk vs fanteria",21,17
+"198",95,1,"Hulk","50 caliber jeep",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,21
+"199",96,1,"Hulk","50 caliber jeep",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,21
+"200",97,1,"Hulk","US Army Soldier",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,8
+"201",97,2,"Hulk","US Army Soldier",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,8
+"202",97,3,"Hulk","US Army Soldier",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,8
+"203",97,4,"Hulk","US Army Soldier",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,8
+"204",97,5,"Hulk","US Army Soldier",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,8
+"205",97,6,"Hulk","US Army Soldier",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,8
+"206",97,7,"Hulk","US Army Soldier",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,8
+"207",97,8,"Hulk","US Army Soldier",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,8
+"208",98,1,"Hulk","US Army Soldier",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,8
+"209",98,2,"Hulk","US Army Soldier",1,"L'incredibile Hulk","battaglia università - hulk vs fanteria",17,8
+"210",99,1,"Emil Blomsky","Hulk",0.75,"L'incredibile Hulk","battaglia università - hulk vs blomsky e jeep sperimentali",18,17
+"211",100,1,"Emil Blomsky","Hulk",0.6,"L'incredibile Hulk","battaglia università - hulk vs blomsky e jeep sperimentali",18,17
+"212",101,1,"Emil Blomsky","Hulk",0.55,"L'incredibile Hulk","battaglia università - hulk vs blomsky e jeep sperimentali",18,17
+"213",102,1,"Sonic weapon jeep","Emil Blomsky",0.75,"L'incredibile Hulk","battaglia università - hulk vs blomsky e jeep sperimentali",22,18
+"214",103,1,"Sonic weapon jeep","Hulk",0.75,"L'incredibile Hulk","battaglia università - hulk vs blomsky e jeep sperimentali",22,17
+"215",104,1,"Hulk","Sonic weapon jeep",1,"L'incredibile Hulk","battaglia università - hulk vs blomsky e jeep sperimentali",17,22
+"216",105,1,"Hulk","Sonic weapon jeep",1,"L'incredibile Hulk","battaglia università - hulk vs blomsky e jeep sperimentali",17,22
+"217",106,1,"Hulk","Emil Blomsky",1,"L'incredibile Hulk","battaglia università - hulk vs blomsky e jeep sperimentali",17,18
+"218",107,1,"Assault Chopper","Hulk",0.6,"L'incredibile Hulk","battaglia università - hulk vs elicottero",23,17
+"219",108,1,"Hulk","Assault Chopper",1,"L'incredibile Hulk","battaglia università - hulk vs elicottero",17,23
+"220",109,1,"US Army Soldier","Bruce Banner",1,"L'incredibile Hulk","battaglia finale città - laboratorio di Samuel Sterns",8,19
+"221",110,1,"Emil Blomsky","Betty Ross",1,"L'incredibile Hulk","battaglia finale città - laboratorio di Samuel Sterns",18,20
+"222",111,1,"Emil Blomsky","US Army Soldier",1,"L'incredibile Hulk","battaglia finale città - nascita di Abominio",18,8
+"223",112,1,"Emil Blomsky","Samuel Sterns",1,"L'incredibile Hulk","battaglia finale città - nascita di Abominio",18,72
+"224",113,1,"Abominio","Samuel Sterns",1,"L'incredibile Hulk","battaglia finale città - nascita di Abominio",24,72
+"225",114,1,"Abominio","policeman",1,"L'incredibile Hulk","battaglia finale città - nascita di Abominio",24,47
+"226",115,1,"Abominio","US Army Soldier",1,"L'incredibile Hulk","battaglia finale città - nascita di Abominio",24,8
+"227",116,1,"Abominio","car",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,44
+"228",117,1,"Abominio","policeman",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,47
+"229",118,1,"Abominio","car",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,44
+"230",123,1,"Abominio","car",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,44
+"231",123,2,"Abominio","car",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,44
+"232",124,1,"Abominio","policeman",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,47
+"233",124,2,"Abominio","policeman",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,47
+"234",124,3,"Abominio","policeman",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,47
+"235",124,4,"Abominio","policeman",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,47
+"236",124,5,"Abominio","policeman",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,47
+"237",124,6,"Abominio","policeman",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,47
+"238",125,1,"Abominio","car",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,44
+"239",125,2,"Abominio","car",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,44
+"240",125,3,"Abominio","car",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,44
+"241",125,4,"Abominio","car",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,44
+"242",125,5,"Abominio","car",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,44
+"243",125,6,"Abominio","car",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,44
+"244",125,7,"Abominio","car",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,44
+"245",125,8,"Abominio","car",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,44
+"246",125,9,"Abominio","car",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,44
+"247",125,10,"Abominio","car",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,44
+"248",125,11,"Abominio","car",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,44
+"249",126,1,"Abominio","US Army Soldier",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,8
+"250",126,2,"Abominio","US Army Soldier",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,8
+"251",126,3,"Abominio","US Army Soldier",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,8
+"252",126,4,"Abominio","US Army Soldier",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,8
+"253",127,1,"Abominio","policeman",1,"L'incredibile Hulk","battaglia finale città - Abominio fa casino",24,47
+"254",128,1,"Abominio","civilian",1,"L'incredibile Hulk","battaglia finale città - Hulk vs Abominio (strade)",24,1
+"255",129,1,"Abominio","Hulk",1,"L'incredibile Hulk","battaglia finale città - Hulk vs Abominio (strade)",24,17
+"256",130,1,"Hulk","car",1,"L'incredibile Hulk","battaglia finale città - Hulk vs Abominio (strade)",17,44
+"257",131,1,"Hulk","Abominio",1,"L'incredibile Hulk","battaglia finale città - Hulk vs Abominio (strade)",17,24
+"258",132,1,"Abominio","Hulk",1,"L'incredibile Hulk","battaglia finale città - Hulk vs Abominio (strade)",24,17
+"259",133,1,"Chopper w Minigun","Abominio",0.55,"L'incredibile Hulk","battaglia finale città - Hulk vs Abominio (strade)",25,24
+"260",134,1,"Abominio","Chopper w Minigun",1,"L'incredibile Hulk","battaglia finale città - Hulk vs Abominio (strade)",24,25
+"261",135,1,"Abominio","Hulk",0.75,"L'incredibile Hulk","battaglia finale città - Hulk vs Abominio (tetto)",24,17
+"262",136,1,"Hulk","Abominio",1,"L'incredibile Hulk","battaglia finale città - Hulk vs Abominio (tetto)",17,24
+"263",137,1,"Abominio","Hulk",1,"L'incredibile Hulk","battaglia finale città - Hulk vs Abominio (tetto)",24,17
+"264",138,1,"Abominio","Hulk",1,"L'incredibile Hulk","battaglia finale città - Hulk vs Abominio (tetto)",24,17
+"265",139,1,"Hulk","Abominio",1,"L'incredibile Hulk","battaglia finale città - Hulk vs Abominio (tetto)",17,24
+"266",140,1,"Ivan Vanko","car",1,"Iron Man 2","monaco gran prix attack - distruzione macchine",26,44
+"267",140,2,"Ivan Vanko","car",1,"Iron Man 2","monaco gran prix attack - distruzione macchine",26,44
+"268",140,3,"Ivan Vanko","car",1,"Iron Man 2","monaco gran prix attack - distruzione macchine",26,44
+"269",141,1,"Ivan Vanko","Tony Stark",1,"Iron Man 2","monaco gran prix attack - distruzione macchine",26,28
+"270",142,1,"Happy Hogan","Ivan Vanko",1,"Iron Man 2","monaco gran prix attack - arrivo happy e pepper",27,26
+"271",143,1,"Ivan Vanko","Happy Hogan",1,"Iron Man 2","monaco gran prix attack - arrivo happy e pepper",26,27
+"272",144,1,"Ivan Vanko","Iron Man",1,"Iron Man 2","monaco gran prix attack - scontro con armatura",26,11
+"273",145,1,"Iron Man","Ivan Vanko",1,"Iron Man 2","monaco gran prix attack - scontro con armatura",11,26
+"274",146,1,"Tony Stark","Happy Hogan",1,"Iron Man 2","scena pugilato",28,27
+"275",147,1,"Black Widow","Happy Hogan",1,"Iron Man 2","scena pugilato",29,27
+"276",148,1,"Ivan Vanko","prisoner",1,"Iron Man 2","Ivan Vanko fuga prigione",26,73
+"277",149,1,"Ivan Vanko","policeman",1,"Iron Man 2","Ivan Vanko fuga prigione",26,47
+"278",150,1,"Iron Man","War Machine",1,"Iron Man 2","festa compleanno",11,30
+"279",151,1,"War Machine","Iron Man",1,"Iron Man 2","festa compleanno",30,11
+"280",153,1,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,31
+"281",154,1,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,31
+"282",155,1,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,31
+"283",156,1,"Ivan Vanko","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",26,74
+"284",156,2,"Ivan Vanko","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",26,74
+"285",157,1,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",29,74
+"286",157,2,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",29,74
+"287",157,3,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",29,74
+"288",157,4,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",29,74
+"289",157,5,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",29,74
+"290",157,6,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",29,74
+"291",157,7,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",29,74
+"292",157,8,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",29,74
+"293",157,9,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",29,74
+"294",157,10,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",29,74
+"295",157,11,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",29,74
+"296",157,12,"Black Widow","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",29,74
+"297",158,1,"Happy Hogan","Hammer guard",1,"Iron Man 2","Attacco robot stark expo - black widow hammer industries",27,74
+"298",159,1,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,31
+"299",160,1,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,31
+"300",160,2,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,31
+"301",160,3,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,31
+"302",160,4,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,31
+"303",160,5,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,31
+"304",160,6,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,31
+"305",160,7,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,31
+"306",160,8,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,31
+"307",160,9,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - hackeraggio",11,31
+"308",161,1,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"309",161,1,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"310",161,2,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"311",161,2,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"312",161,3,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"313",161,3,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"314",161,4,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"315",161,4,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"316",161,5,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"317",161,5,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"318",161,6,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"319",161,6,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"320",161,7,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"321",161,7,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"322",161,8,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"323",161,8,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"324",161,9,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"325",161,9,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"326",161,10,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"327",161,10,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"328",161,11,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"329",161,11,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"330",161,12,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"331",161,12,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"332",161,13,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"333",161,13,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"334",161,14,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"335",161,14,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"336",161,15,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"337",161,15,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"338",161,16,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"339",161,16,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"340",161,17,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"341",161,17,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"342",161,18,"Iron Man","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"343",161,18,"War Machine","Hammer Robot",1,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"344",161,19,"Iron Man","Hammer Robot",0.75,"Iron Man 2","Attacco robot stark expo - scontro finale",11,31
+"345",161,19,"War Machine","Hammer Robot",0.75,"Iron Man 2","Attacco robot stark expo - scontro finale",30,31
+"346",162,1,"Ivan Vanko","Iron Man",1,"Iron Man 2","Attacco robot stark expo - scontro finale",26,11
+"347",163,1,"Ivan Vanko","War Machine",1,"Iron Man 2","Attacco robot stark expo - scontro finale",26,30
+"348",164,1,"Iron Man","Ivan Vanko",0.75,"Iron Man 2","Attacco robot stark expo - scontro finale",11,26
+"349",164,1,"War Machine","Ivan Vanko",0.75,"Iron Man 2","Attacco robot stark expo - scontro finale",30,26
+"350",165,1,"Laufey","acient ship",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",32,75
+"351",167,1,"Laufey","civilian",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",32,1
+"352",167,2,"Laufey","civilian",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",32,1
+"353",167,3,"Laufey","civilian",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",32,1
+"354",167,4,"Laufey","civilian",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",32,1
+"355",167,5,"Laufey","civilian",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",32,1
+"356",167,6,"Laufey","civilian",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",32,1
+"357",167,7,"Laufey","civilian",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",32,1
+"358",167,8,"Laufey","civilian",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",32,1
+"359",167,9,"Laufey","civilian",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",32,1
+"360",168,1,"Laufey","Asgardian Soldier",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",32,34
+"361",168,2,"Laufey","Asgardian Soldier",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",32,34
+"362",169,1,"Ice Giant","Asgardian Soldier",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",33,34
+"363",170,1,"Asgardian Soldier","Ice Giant",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",34,33
+"364",171,1,"Laufey","Asgardian Soldier",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",32,34
+"365",171,2,"Laufey","Asgardian Soldier",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",32,34
+"366",171,3,"Laufey","Asgardian Soldier",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",32,34
+"367",172,1,"Ice Giant","Asgardian Soldier",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",33,34
+"368",172,2,"Ice Giant","Asgardian Soldier",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",33,34
+"369",173,1,"Laufey","Asgardian Soldier",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",32,34
+"370",174,1,"Odin","Ice Giant",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",35,33
+"371",174,2,"Odin","Ice Giant",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",35,33
+"372",174,3,"Odin","Ice Giant",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",35,33
+"373",174,4,"Odin","Ice Giant",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",35,33
+"374",175,1,"Odin","Laufey",1,"Thor","battaglia Asgard vs Giganti di ghiaccio (956 AD)",35,32
+"375",176,1,"Ice Giant","Asgardian Soldier",0.833333333333333,"Thor","tentativo furto tesseract giganti di ghiaccio",33,34
+"376",177,1,"Destroyer","Ice Giant",1,"Thor","tentativo furto tesseract giganti di ghiaccio",36,33
+"377",177,2,"Destroyer","Ice Giant",1,"Thor","tentativo furto tesseract giganti di ghiaccio",36,33
+"378",177,3,"Destroyer","Ice Giant",1,"Thor","tentativo furto tesseract giganti di ghiaccio",36,33
+"379",178,1,"Thor","Grundroth",1,"Thor","Attacco a Jotunn - inizio battaglia",37,76
+"380",179,1,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"381",179,2,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"382",179,3,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"383",179,4,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"384",180,1,"Hogun","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",38,33
+"385",181,1,"Sif","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",39,33
+"386",182,1,"Fandal","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",40,33
+"387",183,1,"Loki","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",41,33
+"388",184,1,"Ice Giant","Volstagg",0.55,"Thor","Attacco a Jotunn - inizio battaglia",33,42
+"389",185,1,"Volstagg","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",42,33
+"390",186,1,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"391",187,1,"Ice Giant","Hogun",1,"Thor","Attacco a Jotunn - inizio battaglia",33,38
+"392",188,1,"Ice Giant","Thor",1,"Thor","Attacco a Jotunn - inizio battaglia",33,37
+"393",189,1,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"394",190,1,"Ice Giant","Sif",1,"Thor","Attacco a Jotunn - inizio battaglia",33,39
+"395",191,1,"Loki","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",41,33
+"396",192,1,"Loki","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",41,33
+"397",193,1,"Sif","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",39,33
+"398",194,1,"Ice Giant","Volstagg",0.75,"Thor","Attacco a Jotunn - inizio battaglia",33,42
+"399",195,1,"Volstagg","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",42,33
+"400",196,1,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"401",196,2,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"402",197,1,"Loki","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",41,33
+"403",198,1,"Ice Giant","Fandal",0.75,"Thor","Attacco a Jotunn - inizio battaglia",33,40
+"404",199,1,"Fandal","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",40,33
+"405",200,1,"Ice Giant","Fandal",1,"Thor","Attacco a Jotunn - inizio battaglia",33,40
+"406",201,1,"Loki","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",41,33
+"407",202,1,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"408",202,2,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"409",202,3,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"410",202,4,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"411",202,5,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"412",202,6,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"413",202,7,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"414",202,8,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"415",202,9,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"416",202,10,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"417",202,11,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"418",202,12,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"419",203,1,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"420",203,2,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"421",203,3,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"422",203,4,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"423",203,5,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - inizio battaglia",37,33
+"424",204,1,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"425",204,2,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"426",204,3,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"427",204,4,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"428",204,5,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"429",204,6,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"430",204,7,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"431",204,8,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"432",204,9,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"433",204,10,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"434",204,11,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"435",204,12,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"436",204,13,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"437",204,14,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"438",204,15,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"439",204,16,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"440",204,17,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"441",204,18,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"442",204,19,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"443",204,20,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"444",204,21,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"445",204,22,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"446",204,23,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"447",204,24,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"448",204,25,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"449",204,26,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"450",204,27,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"451",204,28,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"452",204,29,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"453",204,30,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"454",204,31,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"455",204,32,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"456",204,33,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"457",204,34,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"458",204,35,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"459",204,36,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"460",204,37,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"461",204,38,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"462",204,39,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"463",204,40,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"464",204,41,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"465",204,42,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"466",204,43,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"467",204,44,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"468",204,45,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"469",204,46,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"470",204,47,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"471",204,48,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"472",204,49,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"473",204,50,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"474",204,51,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"475",204,52,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"476",204,53,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"477",204,54,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"478",204,55,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"479",204,56,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"480",204,57,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"481",204,58,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"482",204,59,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"483",204,60,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"484",204,61,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"485",204,62,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"486",204,63,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"487",204,64,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"488",204,65,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"489",204,66,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"490",204,67,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"491",204,68,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"492",204,69,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"493",204,70,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"494",204,71,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"495",204,72,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"496",204,73,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"497",204,74,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"498",204,75,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"499",204,76,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"500",204,77,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"501",204,78,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"502",204,79,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"503",204,80,"Thor","Ice Giant",1,"Thor","Attacco a Jotunn - fuga",37,33
+"504",205,1,"Ice Giant Monster","Fandal",1,"Thor","Attacco a Jotunn - fuga",43,40
+"505",206,1,"Ice Giant Monster","Volstagg",1,"Thor","Attacco a Jotunn - fuga",43,42
+"506",207,1,"Ice Giant Monster","Hogun",1,"Thor","Attacco a Jotunn - fuga",43,38
+"507",208,1,"Ice Giant Monster","Sif",1,"Thor","Attacco a Jotunn - fuga",43,39
+"508",209,1,"Ice Giant Monster","Loki",1,"Thor","Attacco a Jotunn - fuga",43,41
+"509",210,1,"Thor","Ice Giant Monster",1,"Thor","Attacco a Jotunn - fuga",37,43
+"510",211,1,"Odin","Thor",1,"Thor","rimozione poteri a Thor",35,37
+"511",212,1,"car","Thor (Unpowered)",1,"Thor","arrivo thor sulla terra - Thor investito",44,46
+"512",213,1,"Darcy Lewis","Thor (Unpowered)",1,"Thor","arrivo thor sulla terra - scena taser",45,46
+"513",214,1,"Thor (Unpowered)","civilian",1,"Thor","arrivo thor sulla terra - ospedale",46,1
+"514",214,2,"Thor (Unpowered)","civilian",1,"Thor","arrivo thor sulla terra - ospedale",46,1
+"515",214,3,"Thor (Unpowered)","civilian",1,"Thor","arrivo thor sulla terra - ospedale",46,1
+"516",214,4,"Thor (Unpowered)","civilian",1,"Thor","arrivo thor sulla terra - ospedale",46,1
+"517",214,5,"Thor (Unpowered)","civilian",1,"Thor","arrivo thor sulla terra - ospedale",46,1
+"518",214,6,"Thor (Unpowered)","civilian",1,"Thor","arrivo thor sulla terra - ospedale",46,1
+"519",215,1,"policeman","Thor (Unpowered)",0.625,"Thor","arrivo thor sulla terra - ospedale",47,46
+"520",215,1,"civilian","Thor (Unpowered)",0.75,"Thor","arrivo thor sulla terra - ospedale",1,46
+"521",216,1,"car","Thor (Unpowered)",1,"Thor","arrivo thor sulla terra - Thor investito 2",44,46
+"522",217,1,"Thor (Unpowered)","Shield Agent",1,"Thor","scena sito martello",46,48
+"523",217,2,"Thor (Unpowered)","Shield Agent",1,"Thor","scena sito martello",46,48
+"524",218,1,"Thor (Unpowered)","Shield Agent",1,"Thor","scena sito martello",46,48
+"525",218,2,"Thor (Unpowered)","Shield Agent",1,"Thor","scena sito martello",46,48
+"526",219,1,"Thor (Unpowered)","Shield Agent",1,"Thor","scena sito martello",46,48
+"527",219,2,"Thor (Unpowered)","Shield Agent",1,"Thor","scena sito martello",46,48
+"528",219,3,"Thor (Unpowered)","Shield Agent",1,"Thor","scena sito martello",46,48
+"529",220,1,"Thor (Unpowered)","Shield Agent",1,"Thor","scena sito martello",46,48
+"530",220,2,"Thor (Unpowered)","Shield Agent",1,"Thor","scena sito martello",46,48
+"531",220,3,"Thor (Unpowered)","Shield Agent",1,"Thor","scena sito martello",46,48
+"532",221,1,"Shield Agent","Thor (Unpowered)",1,"Thor","scena sito martello",48,46
+"533",222,1,"Shield Agent","Thor (Unpowered)",0.75,"Thor","scena sito martello",48,46
+"534",223,1,"Thor (Unpowered)","Shield Agent",1,"Thor","scena sito martello",46,48
+"535",224,1,"Loki","Heimdal",1,"Thor","Attacco del Distruttore - Scena su bifrost",41,49
+"536",225,1,"Destroyer","Shield Agent",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,48
+"537",225,2,"Destroyer","Shield Agent",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,48
+"538",225,3,"Destroyer","Shield Agent",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,48
+"539",225,4,"Destroyer","Shield Agent",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,48
+"540",225,5,"Destroyer","Shield Agent",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,48
+"541",225,6,"Destroyer","Shield Agent",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,48
+"542",225,7,"Destroyer","Shield Agent",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,48
+"543",225,8,"Destroyer","Shield Agent",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,48
+"544",225,9,"Destroyer","Shield Agent",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,48
+"545",225,10,"Destroyer","Shield Agent",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,48
+"546",225,11,"Destroyer","Shield Agent",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,48
+"547",225,12,"Destroyer","Shield Agent",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,48
+"548",225,13,"Destroyer","Shield Agent",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,48
+"549",225,14,"Destroyer","Shield Agent",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,48
+"550",225,15,"Destroyer","Shield Agent",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,48
+"551",226,1,"Destroyer","car",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,44
+"552",226,2,"Destroyer","car",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,44
+"553",227,1,"Destroyer","Jasper Sitwell",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,77
+"554",228,1,"Destroyer","Philip Coulson",1,"Thor","Attacco del Distruttore - arrivo del Distruttore",36,54
+"555",229,1,"Destroyer","car",1,"Thor","Attacco del Distruttore - attacco alla cittadina",36,44
+"556",229,2,"Destroyer","car",1,"Thor","Attacco del Distruttore - attacco alla cittadina",36,44
+"557",230,1,"Destroyer","Volstagg",1,"Thor","Attacco del Distruttore - attacco alla cittadina",36,42
+"558",231,1,"Sif","Destroyer",1,"Thor","Attacco del Distruttore - attacco alla cittadina",39,36
+"559",232,1,"Destroyer","Sif",1,"Thor","Attacco del Distruttore - attacco alla cittadina",36,39
+"560",233,1,"Destroyer","Sif",1,"Thor","Attacco del Distruttore - attacco alla cittadina",36,39
+"561",234,1,"Destroyer","Fandal",1,"Thor","Attacco del Distruttore - attacco alla cittadina",36,40
+"562",235,1,"Destroyer","Hogun",1,"Thor","Attacco del Distruttore - attacco alla cittadina",36,38
+"563",236,1,"Destroyer","Volstagg",1,"Thor","Attacco del Distruttore - attacco alla cittadina",36,42
+"564",237,1,"Destroyer","Volstagg",1,"Thor","Attacco del Distruttore - attacco alla cittadina",36,42
+"565",238,1,"Destroyer","car",1,"Thor","Attacco del Distruttore - attacco alla cittadina",36,44
+"566",239,1,"Destroyer","Thor (Unpowered)",1,"Thor","Attacco del Distruttore - attacco alla cittadina",36,46
+"567",240,1,"Thor","Destroyer",0.75,"Thor","Attacco del Distruttore - Thor degno",37,36
+"568",241,1,"Thor","Destroyer",1,"Thor","Attacco del Distruttore - Thor degno",37,36
+"569",242,1,"Heimdal","Ice Giant",1,"Thor","Ritorno ad Asgard",49,33
+"570",242,2,"Heimdal","Ice Giant",1,"Thor","Ritorno ad Asgard",49,33
+"571",243,1,"Frigga","Ice Giant",1,"Thor","Ritorno ad Asgard",50,33
+"572",244,1,"Laufey","Frigga",1,"Thor","Ritorno ad Asgard",32,50
+"573",245,1,"Loki","Laufey",1,"Thor","Ritorno ad Asgard",41,32
+"574",246,1,"Loki","Thor",1,"Thor","Ritorno ad Asgard - Bifrost",41,37
+"575",247,1,"Loki","Thor",1,"Thor","Ritorno ad Asgard - Bifrost",41,37
+"576",248,1,"Thor","Loki",0.75,"Thor","Ritorno ad Asgard - Bifrost",37,41
+"577",249,1,"Loki","Thor",0.6,"Thor","Ritorno ad Asgard - Bifrost",41,37
+"578",250,1,"Thor","Loki",1,"Thor","Ritorno ad Asgard - Bifrost",37,41
+"579",251,1,"Loki","Thor",1,"Thor","Ritorno ad Asgard - Bifrost",41,37
+"580",252,1,"Thor","Loki",1,"Thor","Ritorno ad Asgard - Bifrost",37,41
+"581",253,1,"Thor","Loki",1,"Thor","Ritorno ad Asgard - Bifrost",37,41
+"582",254,1,"Loki","Hawkeye",1,"Avengers","Scena iniziale laboratorio Shield",41,51
+"583",255,1,"Loki","Nick Fury",1,"Avengers","Scena iniziale laboratorio Shield",41,52
+"584",256,1,"Loki","Shield Agent",1,"Avengers","Scena iniziale laboratorio Shield",41,48
+"585",256,2,"Loki","Shield Agent",1,"Avengers","Scena iniziale laboratorio Shield",41,48
+"586",256,3,"Loki","Shield Agent",1,"Avengers","Scena iniziale laboratorio Shield",41,48
+"587",256,4,"Loki","Shield Agent",1,"Avengers","Scena iniziale laboratorio Shield",41,48
+"588",257,1,"Loki","civilian",1,"Avengers","Scena iniziale laboratorio Shield",41,1
+"589",257,2,"Loki","civilian",1,"Avengers","Scena iniziale laboratorio Shield",41,1
+"590",257,3,"Loki","civilian",1,"Avengers","Scena iniziale laboratorio Shield",41,1
+"591",257,4,"Loki","civilian",1,"Avengers","Scena iniziale laboratorio Shield",41,1
+"592",258,1,"Loki","Shield Agent",1,"Avengers","Scena iniziale laboratorio Shield",41,48
+"593",258,2,"Loki","Shield Agent",1,"Avengers","Scena iniziale laboratorio Shield",41,48
+"594",258,3,"Loki","Shield Agent",1,"Avengers","Scena iniziale laboratorio Shield",41,48
+"595",258,4,"Loki","Shield Agent",1,"Avengers","Scena iniziale laboratorio Shield",41,48
+"596",259,1,"Hawkeye","Nick Fury",1,"Avengers","Scena iniziale laboratorio Shield",51,52
+"597",260,1,"Loki","car",1,"Avengers","Scena iniziale laboratorio Shield",41,44
+"598",261,1,"Loki","Shield Agent",1,"Avengers","Scena iniziale laboratorio Shield",41,48
+"599",261,2,"Loki","Shield Agent",1,"Avengers","Scena iniziale laboratorio Shield",41,48
+"600",262,1,"Loki","Elicopter",1,"Avengers","Scena iniziale laboratorio Shield",41,78
+"601",263,1,"terrorist","Black Widow",0.55,"Avengers","Interrogatorio Black Widow",10,29
+"602",264,1,"Black Widow","Georgi Lukov",1,"Avengers","Interrogatorio Black Widow",29,79
+"603",265,1,"Black Widow","terrorist",1,"Avengers","Interrogatorio Black Widow",29,10
+"604",265,2,"Black Widow","terrorist",1,"Avengers","Interrogatorio Black Widow",29,10
+"605",266,1,"Hawkeye","guard",1,"Avengers","Opera - incursione di Loki",51,80
+"606",266,2,"Hawkeye","guard",1,"Avengers","Opera - incursione di Loki",51,80
+"607",267,1,"Loki","civilian",1,"Avengers","Opera - incursione di Loki",41,1
+"608",267,2,"Loki","civilian",1,"Avengers","Opera - incursione di Loki",41,1
+"609",268,1,"Loki","car",1,"Avengers","Opera - incursione di Loki",41,44
+"610",269,1,"Loki","policeman",1,"Avengers","Opera - incursione di Loki",41,47
+"611",269,2,"Loki","policeman",1,"Avengers","Opera - incursione di Loki",41,47
+"612",270,1,"Captain America","Loki",1,"Avengers","Opera - arrivo Avengers",7,41
+"613",271,1,"Loki","Captain America",1,"Avengers","Opera - arrivo Avengers",41,7
+"614",272,1,"Iron Man","Loki",1,"Avengers","Opera - arrivo Avengers",11,41
+"615",273,1,"Thor","Iron Man",0.6,"Avengers","Scontro Thor vs Ironman & Cap",37,11
+"616",274,1,"Thor","Loki",1,"Avengers","Scontro Thor vs Ironman & Cap",37,41
+"617",275,1,"Iron Man","Thor",1,"Avengers","Scontro Thor vs Ironman & Cap",11,37
+"618",276,1,"Thor","Iron Man",1,"Avengers","Scontro Thor vs Ironman & Cap",37,11
+"619",277,1,"Iron Man","Thor",1,"Avengers","Scontro Thor vs Ironman & Cap",11,37
+"620",278,1,"Thor","Iron Man",0.75,"Avengers","Scontro Thor vs Ironman & Cap",37,11
+"621",279,1,"Iron Man","Thor",1,"Avengers","Scontro Thor vs Ironman & Cap",11,37
+"622",280,1,"Thor","Iron Man",1,"Avengers","Scontro Thor vs Ironman & Cap",37,11
+"623",281,1,"Thor","Iron Man",1,"Avengers","Scontro Thor vs Ironman & Cap",37,11
+"624",282,1,"Captain America","Thor",1,"Avengers","Scontro Thor vs Ironman & Cap",7,37
+"625",283,1,"Hulk","Black Widow",1,"Avengers","Attacco all'Helicarrier - Trasformazione di Hulk",17,29
+"626",284,1,"Thor","Hulk",1,"Avengers","Attacco all'Helicarrier - Trasformazione di Hulk",37,17
+"627",285,1,"Thor","Hulk",0.7,"Avengers","Attacco all'Helicarrier - Trasformazione di Hulk",37,17
+"628",286,1,"Hulk","Thor",1,"Avengers","Attacco all'Helicarrier - Trasformazione di Hulk",17,37
+"629",287,1,"Thor","Hulk",1,"Avengers","Attacco all'Helicarrier - Trasformazione di Hulk",37,17
+"630",288,1,"Thor","Hulk",1,"Avengers","Attacco all'Helicarrier - Trasformazione di Hulk",37,17
+"631",289,1,"terrorist","Shield Agent",1,"Avengers","Attacco all'Helicarrier - Iruzione cabina di comando",10,48
+"632",290,1,"terrorist","Maria Hill",0.75,"Avengers","Attacco all'Helicarrier - Iruzione cabina di comando",10,53
+"633",291,1,"Nick Fury","terrorist",1,"Avengers","Attacco all'Helicarrier - Iruzione cabina di comando",52,10
+"634",291,2,"Nick Fury","terrorist",1,"Avengers","Attacco all'Helicarrier - Iruzione cabina di comando",52,10
+"635",292,1,"Maria Hill","terrorist",1,"Avengers","Attacco all'Helicarrier - Iruzione cabina di comando",53,10
+"636",293,1,"Nick Fury","terrorist",0.75,"Avengers","Attacco all'Helicarrier - Iruzione cabina di comando",52,10
+"637",293,1,"Maria Hill","terrorist",0.75,"Avengers","Attacco all'Helicarrier - Iruzione cabina di comando",53,10
+"638",294,1,"Fighter","Hulk",0.55,"Avengers","Attacco all'Helicarrier - Hulk vs jet",13,17
+"639",295,1,"Hulk","Fighter",1,"Avengers","Attacco all'Helicarrier - Hulk vs jet",17,13
+"640",296,1,"Captain America","terrorist",1,"Avengers","Attacco all'Helicarrier - Riattivazione dei motori",7,10
+"641",296,2,"Captain America","terrorist",1,"Avengers","Attacco all'Helicarrier - Riattivazione dei motori",7,10
+"642",297,1,"Nick Fury","terrorist",1,"Avengers","Attacco all'Helicarrier - Riattivazione dei motori",52,10
+"643",298,1,"Hawkeye","Shield Agent",1,"Avengers","Attacco all'Helicarrier - Riattivazione dei motori",51,48
+"644",298,2,"Hawkeye","Shield Agent",1,"Avengers","Attacco all'Helicarrier - Riattivazione dei motori",51,48
+"645",298,3,"Hawkeye","Shield Agent",1,"Avengers","Attacco all'Helicarrier - Riattivazione dei motori",51,48
+"646",298,4,"Hawkeye","Shield Agent",1,"Avengers","Attacco all'Helicarrier - Riattivazione dei motori",51,48
+"647",298,5,"Hawkeye","Shield Agent",1,"Avengers","Attacco all'Helicarrier - Riattivazione dei motori",51,48
+"648",298,6,"Hawkeye","Shield Agent",1,"Avengers","Attacco all'Helicarrier - Riattivazione dei motori",51,48
+"649",298,7,"Hawkeye","Shield Agent",1,"Avengers","Attacco all'Helicarrier - Riattivazione dei motori",51,48
+"650",299,1,"terrorist","Captain America",1,"Avengers","Attacco all'Helicarrier - Riattivazione dei motori",10,7
+"651",300,1,"Loki","Thor",0.75,"Avengers","Attacco all'Helicarrier - Fuga di Loki",41,37
+"652",301,1,"Black Widow","Hawkeye",0.75,"Avengers","Attacco all'Helicarrier - Black Widow vs Hawkeye",29,51
+"653",302,1,"Black Widow","Hawkeye",0.6,"Avengers","Attacco all'Helicarrier - Black Widow vs Hawkeye",29,51
+"654",303,1,"Black Widow","Hawkeye",0.6,"Avengers","Attacco all'Helicarrier - Black Widow vs Hawkeye",29,51
+"655",304,1,"Philip Coulson","terrorist",1,"Avengers","Attacco all'Helicarrier - Fuga di Loki",54,10
+"656",305,1,"Loki","Philip Coulson",1,"Avengers","Attacco all'Helicarrier - Fuga di Loki",41,54
+"657",306,1,"Black Widow","Hawkeye",0.6,"Avengers","Attacco all'Helicarrier - Black Widow vs Hawkeye",29,51
+"658",307,1,"Black Widow","Hawkeye",1,"Avengers","Attacco all'Helicarrier - Black Widow vs Hawkeye",29,51
+"659",308,1,"Philip Coulson","Loki",1,"Avengers","Attacco all'Helicarrier - Fuga di Loki",54,41
+"660",309,1,"Iron Man","terrorist",1,"Avengers","Attacco all'Helicarrier - Riattivazione dei motori",11,10
+"661",311,1,"Loki","Tony Stark",1,"Avengers","Battaglia di New York - mark 7",41,28
+"662",312,1,"Iron Man","Loki",1,"Avengers","Battaglia di New York - mark 7",11,41
+"663",313,1,"Iron Man","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Arrivo dei Chitauri",11,55
+"664",313,2,"Iron Man","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Arrivo dei Chitauri",11,55
+"665",313,3,"Iron Man","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Arrivo dei Chitauri",11,55
+"666",313,4,"Iron Man","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Arrivo dei Chitauri",11,55
+"667",313,5,"Iron Man","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Arrivo dei Chitauri",11,55
+"668",313,6,"Iron Man","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Arrivo dei Chitauri",11,55
+"669",313,7,"Iron Man","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Arrivo dei Chitauri",11,55
+"670",313,8,"Iron Man","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Arrivo dei Chitauri",11,55
+"671",314,1,"Iron Man","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Arrivo dei Chitauri",11,55
+"672",314,2,"Iron Man","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Arrivo dei Chitauri",11,55
+"673",315,1,"Chitauri Speedbike","car",1,"Avengers","Battaglia di New York - Arrivo dei Chitauri",55,44
+"674",315,2,"Chitauri Speedbike","car",0.666666666666667,"Avengers","Battaglia di New York - Arrivo dei Chitauri",55,44
+"675",316,1,"Chitauri Speedbike","civilian",1,"Avengers","Battaglia di New York - Arrivo dei Chitauri",55,1
+"676",316,2,"Chitauri Speedbike","civilian",1,"Avengers","Battaglia di New York - Arrivo dei Chitauri",55,1
+"677",317,1,"Chitauri Speedbike","car",1,"Avengers","Battaglia di New York - Arrivo dei Chitauri",55,44
+"678",318,1,"Iron Man","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Ironman & Queenjet vs Chitauri",11,55
+"679",319,1,"Shield Queenjet","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Ironman & Queenjet vs Chitauri",56,55
+"680",319,2,"Shield Queenjet","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Ironman & Queenjet vs Chitauri",56,55
+"681",319,3,"Shield Queenjet","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Ironman & Queenjet vs Chitauri",56,55
+"682",319,4,"Shield Queenjet","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Ironman & Queenjet vs Chitauri",56,55
+"683",320,1,"Shield Queenjet","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Ironman & Queenjet vs Chitauri",56,55
+"684",320,2,"Shield Queenjet","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Ironman & Queenjet vs Chitauri",56,55
+"685",321,1,"Loki","Thor",0.9,"Avengers","Battaglia di New York - Thor vs Loki",41,37
+"686",322,1,"Loki","Shield Queenjet",1,"Avengers","Battaglia di New York - Thor vs Loki",41,56
+"687",323,1,"Thor","Loki",0.75,"Avengers","Battaglia di New York - Thor vs Loki",37,41
+"688",324,1,"Chitauri Soldier","civilian",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",57,1
+"689",325,1,"Loki","Thor",0.9,"Avengers","Battaglia di New York - Thor vs Loki",41,37
+"690",326,1,"Thor","Loki",1,"Avengers","Battaglia di New York - Thor vs Loki",37,41
+"691",327,1,"Chitauri Speedbike","car",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",55,44
+"692",327,2,"Chitauri Speedbike","car",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",55,44
+"693",327,3,"Chitauri Speedbike","car",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",55,44
+"694",327,4,"Chitauri Speedbike","car",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",55,44
+"695",328,1,"Chitauri Speedbike","policeman",0.8,"Avengers","Battaglia di NewYork - atterraggio Avegers",55,47
+"696",329,1,"Hawkeye","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",51,57
+"697",329,2,"Hawkeye","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",51,57
+"698",329,3,"Hawkeye","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",51,57
+"699",329,4,"Hawkeye","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",51,57
+"700",330,1,"Black Widow","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",29,57
+"701",331,1,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",7,57
+"702",331,2,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",7,57
+"703",331,3,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",7,57
+"704",331,4,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",7,57
+"705",332,1,"Hawkeye","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",51,57
+"706",333,1,"Black Widow","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",29,57
+"707",334,1,"Chitauri Soldier","Hawkeye",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",57,51
+"708",335,1,"Black Widow","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",29,57
+"709",335,2,"Black Widow","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",29,57
+"710",336,1,"Hawkeye","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",51,57
+"711",337,1,"Hawkeye","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",51,57
+"712",338,1,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",7,57
+"713",338,2,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",7,57
+"714",338,3,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",7,57
+"715",338,4,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",7,57
+"716",339,1,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",37,57
+"717",339,2,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",37,57
+"718",339,3,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",37,57
+"719",339,4,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - atterraggio Avegers",37,57
+"720",340,1,"Hulk","Chitauri Giant",0.75,"Avengers","Battaglia di NewYork - Avengers uniti",17,58
+"721",340,1,"Iron Man","Chitauri Giant",0.75,"Avengers","Battaglia di NewYork - Avengers uniti",11,58
+"722",341,1,"Hulk","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",17,57
+"723",341,2,"Hulk","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",17,57
+"724",341,3,"Hulk","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",17,57
+"725",341,4,"Hulk","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",17,57
+"726",342,1,"Hulk","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",17,55
+"727",342,2,"Hulk","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",17,55
+"728",343,1,"Thor","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",37,55
+"729",343,2,"Thor","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",37,55
+"730",343,3,"Thor","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",37,55
+"731",343,4,"Thor","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",37,55
+"732",343,5,"Thor","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",37,55
+"733",343,6,"Thor","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",37,55
+"734",343,7,"Thor","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",37,55
+"735",343,8,"Thor","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",37,55
+"736",344,1,"Thor","Chitauri Giant",1,"Avengers","Battaglia di NewYork - Avengers uniti",37,58
+"737",344,2,"Thor","Chitauri Giant",1,"Avengers","Battaglia di NewYork - Avengers uniti",37,58
+"738",345,1,"Hawkeye","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",51,55
+"739",345,2,"Hawkeye","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",51,55
+"740",345,3,"Hawkeye","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",51,55
+"741",346,1,"Iron Man","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",11,55
+"742",347,1,"Iron Man","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",11,55
+"743",347,2,"Iron Man","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",11,55
+"744",347,3,"Iron Man","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",11,55
+"745",348,1,"Chitauri Soldier","Black Widow",0.75,"Avengers","Battaglia di NewYork - Avengers uniti",57,29
+"746",349,1,"Black Widow","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",29,57
+"747",350,1,"Black Widow","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",29,57
+"748",350,2,"Black Widow","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",29,57
+"749",351,1,"Iron Man","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",11,55
+"750",352,1,"Iron Man","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",11,57
+"751",352,2,"Iron Man","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",11,57
+"752",352,3,"Iron Man","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",11,57
+"753",352,4,"Iron Man","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",11,57
+"754",352,5,"Iron Man","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",11,57
+"755",352,6,"Iron Man","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",11,57
+"756",352,7,"Iron Man","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",11,57
+"757",352,8,"Iron Man","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",11,57
+"758",353,1,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",7,57
+"759",353,2,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",7,57
+"760",354,1,"Iron Man","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",11,57
+"761",355,1,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",7,57
+"762",355,1,"Iron Man","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",11,57
+"763",356,1,"Iron Man","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",11,57
+"764",356,2,"Iron Man","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",11,57
+"765",357,1,"Hawkeye","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",51,57
+"766",358,1,"Hawkeye","Chitauri Speedbike",1,"Avengers","Battaglia di NewYork - Avengers uniti",51,55
+"767",359,1,"Hulk","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",17,57
+"768",359,2,"Hulk","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",17,57
+"769",359,3,"Hulk","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",17,57
+"770",359,4,"Hulk","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",17,57
+"771",359,5,"Hulk","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",17,57
+"772",359,6,"Hulk","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",17,57
+"773",359,7,"Hulk","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",17,57
+"774",360,1,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",37,57
+"775",360,2,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",37,57
+"776",360,3,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",37,57
+"777",360,4,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",37,57
+"778",361,1,"Thor","Chitauri Giant",0.75,"Avengers","Battaglia di NewYork - Avengers uniti",37,58
+"779",361,1,"Hulk","Chitauri Giant",0.75,"Avengers","Battaglia di NewYork - Avengers uniti",17,58
+"780",362,1,"Hulk","Thor",1,"Avengers","Battaglia di NewYork - Avengers uniti",17,37
+"781",363,1,"Chitauri Soldier","Captain America",0.75,"Avengers","Battaglia di NewYork - Avengers uniti",57,7
+"782",364,1,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di NewYork - Avengers uniti",7,57
+"783",365,1,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di New York - Scena Banca",7,57
+"784",365,2,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di New York - Scena Banca",7,57
+"785",366,1,"Chitauri Soldier","Captain America",0.75,"Avengers","Battaglia di New York - Scena Banca",57,7
+"786",367,1,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di New York - Scena Banca",7,57
+"787",367,2,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di New York - Scena Banca",7,57
+"788",368,1,"Hawkeye","Loki",1,"Avengers","Battaglia di New York - Sconfitta Loki",51,41
+"789",369,1,"Hawkeye","Chitauri Speedbike",1,"Avengers","Battaglia di New York - Sconfitta Loki",51,55
+"790",370,1,"Hulk","Loki",1,"Avengers","Battaglia di New York - Sconfitta Loki",17,41
+"791",371,1,"Hulk","Loki",1,"Avengers","Battaglia di New York - Sconfitta Loki",17,41
+"792",372,1,"Hulk","Loki",1,"Avengers","Battaglia di New York - Sconfitta Loki",17,41
+"793",373,1,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",37,57
+"794",373,2,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",37,57
+"795",374,1,"Thor","Chitauri Speedbike",1,"Avengers","Battaglia di New York - lancio missile nucleare",37,55
+"796",375,1,"Iron Man","Chitauri Giant",1,"Avengers","Battaglia di New York - lancio missile nucleare",11,58
+"797",376,1,"Chitauri Giant","Iron Man",0.75,"Avengers","Battaglia di New York - lancio missile nucleare",58,11
+"798",376,1,"Chitauri Soldier","Iron Man",0.55,"Avengers","Battaglia di New York - lancio missile nucleare",57,11
+"799",377,1,"Hawkeye","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",51,57
+"800",377,2,"Hawkeye","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",51,57
+"801",378,1,"Hulk","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",17,57
+"802",378,2,"Hulk","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",17,57
+"803",378,3,"Hulk","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",17,57
+"804",378,4,"Hulk","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",17,57
+"805",379,1,"Chitauri Speedbike","Hulk",0.522222222222222,"Avengers","Battaglia di New York - lancio missile nucleare",55,17
+"806",380,1,"Nick Fury","Fighter",1,"Avengers","Battaglia di New York - lancio missile nucleare",52,13
+"807",381,1,"Chitauri Soldier","Iron Man",0.6,"Avengers","Battaglia di New York - lancio missile nucleare",57,11
+"808",382,1,"Iron Man","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",11,57
+"809",382,2,"Iron Man","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",11,57
+"810",382,3,"Iron Man","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",11,57
+"811",382,4,"Iron Man","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",11,57
+"812",383,1,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",7,57
+"813",383,2,"Captain America","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",7,57
+"814",384,1,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",37,57
+"815",384,2,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",37,57
+"816",384,3,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",37,57
+"817",385,1,"Chitauri Soldier","Captain America",0.6,"Avengers","Battaglia di New York - lancio missile nucleare",57,7
+"818",386,1,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",37,57
+"819",386,2,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",37,57
+"820",386,3,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",37,57
+"821",386,4,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",37,57
+"822",386,5,"Thor","Chitauri Soldier",1,"Avengers","Battaglia di New York - lancio missile nucleare",37,57
+"823",387,1,"Iron Man","Loki",0.583333333333333,"Avengers","Battaglia di New York - Scena Finale",11,41
+"824",387,1,"Captain America","Loki",0.583333333333333,"Avengers","Battaglia di New York - Scena Finale",7,41
+"825",387,1,"Thor","Loki",0.583333333333333,"Avengers","Battaglia di New York - Scena Finale",37,41
+"826",387,1,"Hulk","Loki",0.583333333333333,"Avengers","Battaglia di New York - Scena Finale",17,41
+"827",387,1,"Black Widow","Loki",0.583333333333333,"Avengers","Battaglia di New York - Scena Finale",29,41
+"828",387,1,"Hawkeye","Loki",0.583333333333333,"Avengers","Battaglia di New York - Scena Finale",51,41

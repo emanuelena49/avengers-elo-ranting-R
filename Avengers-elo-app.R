@@ -5,9 +5,9 @@ library(dplyr)
 library(ggplot2)
 
 # import ELO Ready Dataset
-fights_elo_format_s <- read.csv("fights_elo_format.csv")
-# import charater Dataset
-charaters <- read.csv("charaters.csv") %>% select(id, charater)
+fights_elo_format_s <- read.csv("datasets/fights_elo_format.csv")
+# import character Dataset
+characters <- read.csv("datasets/characters.csv") %>% select(id, character)
 
 # Progressive Elo ----
 
@@ -61,7 +61,7 @@ elo_progressive = function(games, z = 400, k = 25) {
 }
 
 scores <- elo_progressive(as.data.frame(fights_elo_format_s))
-n_charaters <- dim(scores)[1]
+n_characters <- dim(scores)[1]
 n_steps <- dim(scores)[2]
 
 # Define UI
@@ -83,21 +83,21 @@ ui <- fluidPage(
       
       # Input: Slider for the time ----
       sliderInput(inputId = "time",
-                  label = "Scontro",
+                  label = "Scene",
                   min = 1,
                   max = n_steps,
                   value = n_steps,
                   step = 1 # (vedi dataset)
       ), 
       
-      sliderInput(inputId = "charaters",
-                  label = "Numero di personaggi",
+      sliderInput(inputId = "characters",
+                  label = "Displayed characters",
                   min = 1,
-                  max = n_charaters,
+                  max = n_characters,
                   value = 6,
                   step = 1 # (vedi dataset)
       )
-    ), 
+    ), # end input panel
     
     
     # Main panel for displaying outputs ----
@@ -109,17 +109,27 @@ ui <- fluidPage(
                   tabPanel("Summary", 
                            
                            h2(textOutput(outputId = "myMovie")), 
-                           h3(textOutput(outputId = "myScene"))
+                           h3(textOutput(outputId = "myScene")), 
+                           h3(textOutput(outputId = "characterCount"))
                            ),
+                  
                   tabPanel("Plot", plotOutput(outputId = "myPlot")),
-                  tabPanel("Table", tableOutput(outputId = "myTable"))
-      )
-    )
+                  tabPanel(
+                    "Table", 
+                    dataTableOutput(
+                      outputId = "myTable"
+                    )
+                  )
+                  
+                  
+      ) # end tabset
+      
+      
+    ) # end output panel
     
-  ),
+  )
   
-  
-)
+) # end ui
 
 
 # Define server logic----
@@ -149,6 +159,16 @@ server <- function(input, output) {
     paste("", comment, sep="")
   })
   
+  output$characterCount <- renderText({
+    
+    # extract the scores at this specific time
+    s <- scores[, input$time]
+    # make it as tibble
+    st <- tibble::enframe(s) %>% rename(id=name, score=value) %>% filter(!is.na(score)) %>% arrange(-score)
+    
+    paste("Appeared characters: ", count(st))
+  })
+  
   
   output$myPlot <- renderPlot({
     
@@ -156,16 +176,16 @@ server <- function(input, output) {
     s <- scores[, input$time]
     # make it as tibble
     st <- tibble::enframe(s) %>% rename(id=name, score=value) %>% filter(!is.na(score)) %>% arrange(-score)
-    # join with charater list
-    st <- st %>% left_join(charaters, by=c('id'))
+    # join with character list
+    st <- st %>% left_join(characters, by=c('id'))
     
-    # charaters to print
-    ctp <- input$charaters
+    # characters to print
+    ctp <- input$characters
     
     ggplot(data=st %>% head(n=ctp), mapping = aes(
-        x=reorder(charater, -score), 
+        x=reorder(character, -score), 
         y=score, 
-        fill=charater, 
+        fill=character, 
         )) +
       
       geom_bar(stat="identity") + 
@@ -178,20 +198,21 @@ server <- function(input, output) {
     
   })
   
-  output$myTable <- renderTable({
+  output$myTable <- renderDataTable({
   
     # extract the scores at this specific time
     s <- scores[, input$time]
     # make it as tibble
     st <- tibble::enframe(s) %>% rename(id=name, score=value) %>% filter(!is.na(score)) %>% arrange(-score)
-    # join with charater list
-    st <- st %>% left_join(charaters, by=c('id'))
+    # join with character list
+    st <- st %>% left_join(characters, by=c('id'))
     
-    # charaters to print
-    ctp <- input$charaters
+    # characters to print
+    ctp <- input$characters
     
-    st %>% head(n=ctp)
-  })
+    st
+  }, options = list(aLengthMenu = c(8, 25, 100), iDisplayLength = 8))
+  # code for cool table ( https://stackoverflow.com/q/21548843/7695333 )
 }
 
 shinyApp(ui, server)

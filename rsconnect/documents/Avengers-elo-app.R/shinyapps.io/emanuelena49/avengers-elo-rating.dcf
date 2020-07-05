@@ -1,0 +1,13 @@
+name: avengers-elo-rating
+title: avengers-elo-rating
+username:
+account: emanuelena49
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2537991
+bundleId: 3354265
+url: https://emanuelena49.shinyapps.io/avengers-elo-rating/
+when: 1593957010.76586
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|Avengers.pdf|Fonti.docx
