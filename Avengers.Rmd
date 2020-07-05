@@ -2,23 +2,25 @@
 title: "Avengers ELO Rating"
 author: "Emanuele Lena - 142411"
 output: ioslides_presentation
-fig_width: 6 
-fig_height: 4 
 ---
 ```{r setup, include=FALSE}
 # cache results
 knitr::opts_chunk$set(echo = FALSE, eval = TRUE, message=FALSE, warning = FALSE, fig.align='center')
 ```
 
-# Inspirations
-
 ![https://www.flickr.com/photos/tales2astonish/6976086962](img/avengers.jpg)
+
+## Objective
+
+Classify the streght of Marvel Cinematic Universe charaters using ELO algorithm
+
+# Inspirations
 
 ## Dragon Ball Power Levels
 
 ![https://www.pinterest.it/pin/812899801474131186/](img/power level.jpg)
 
-## The ELO Alghorithm
+## The ELO Rating Calculation Alghoritm
 
 $$
 \begin{array}{lll}
@@ -27,11 +29,20 @@ r_{i} & \leftarrow & r_i + \kappa (s_{i,j} - \mu_{i,j})
 r_j & \leftarrow & r_j + \kappa (s_{j,i} - \mu_{j,i})
 \end{array}
 $$
+with:
 
+* actual result of match: $s_{i,j}$ (a number in [0,1] )
+* predicted result: 
+$$
+\begin{array}{lll}
+\mu_{i,j} & = & \frac{1}{1 + 10^{-(r_i - r_j) / \zeta}} = 
+\frac{10^{r_i / \zeta}}{10^{r_i / \zeta} + 10^{r_j / \zeta}} \\\\
+\end{array}
+$$
+* actual score of a player: r_i
+* a learing rate k 
 
----
-
-# Building my Dataframe
+# Building my Dataset
 ## My sample
 
 ### Movies
@@ -82,7 +93,6 @@ raw_avengers_list_of_tibble <- read_excel_allsheets("Avengers.xlsx")
 names(raw_avengers_list_of_tibble) %>% kable(col.names = c("My movies:"))
 ```
 
-
 ---
 
 ### Dataset Structure
@@ -97,8 +107,6 @@ raw_avengers_tibble <-
 head(raw_avengers_tibble, n=10) %>% kable()
 ```
 
----
-
 ## The concept of fight
 
 ### Variants
@@ -107,7 +115,6 @@ head(raw_avengers_tibble, n=10) %>% kable()
 # (select only id winner and loser to print some clear samples)
 rat_s <- raw_avengers_tibble %>% select(id, winner, loser)
 ```
-
 
 I have different variants of fights:
 
@@ -144,7 +151,6 @@ rat_s %>% filter(id==23) %>% kable()
 rat_s %>% filter(id==93) %>% kable()
 ```
 
----
 
 # Data Manipulations
 
@@ -227,7 +233,6 @@ fights_tidy %>% select(id, winner_n, winner_charater, loser_n, loser_charater) %
 
 ```
 
----
 
 ## Charater list + general statistics
 
@@ -297,7 +302,6 @@ all_charaters_statistics %>% kable()
 
 ```
 
----
 
 ## Prepare the dataframe for ELO
 
@@ -312,8 +316,6 @@ expected <- tibble(
 expected %>% kable()
 ```
 
----
-
 ### Actual Dataset Format
 ```{r}
 head(fights_tidy %>% select(winner_n, winner_charater, loser_n, loser_charater), n=5) %>% kable()
@@ -322,9 +324,10 @@ head(fights_tidy %>% select(winner_n, winner_charater, loser_n, loser_charater),
 ---
 
 ### My Choices
+
 I decided to apply this algorithm:
 
-* Winner goes always in White, Loser goes always in Black => score will be always be a numbers in (0,1]
+* Winner goes always in White, Loser goes always in Black => score will be always be a numbers in (0.5,1]
 * given n winners and m losers, I will have...
   + m/n lines where White=winner, Black=loser, Score=1
   + (eventually) one line with White=winner, Black=loser and  $$Score=\frac{rest(\frac{m}{n})}{n} * 0.5 + 0.5$$
@@ -407,8 +410,6 @@ fights_elo_format %>% select(White, winner, Black, loser, Score) %>%  kable()
     
 ```
 
----
-
 # ELO Classification
 
 ```{r}
@@ -456,18 +457,16 @@ elo = function(games, z = 400, k = 25) {
 
 ```
 
----
-
 ## Results and comments
 
 ### And the winner is ...
 
----- 
+---
 
 ### ... Iron Man!
 ![https://www.pinterest.it/pin/842173199049318100/](img/iron-man.jpg)
 
-----
+---
 
 ### Top 10 Charaters
 
@@ -502,26 +501,21 @@ head(scores,n=5) %>% kable()
 ---
 
 ![Something has gone wrong...](img/pepper fighter chitauri.jpg)
-
 ---
-
-### Problems
-
-* Inappropriate algorith/data manipulation methods
-* "Cinematic Distorsion" (some charaters are too much "in the spotlight")
-
----
-
-### Problems (2)
-
-* "Implicit Strenghts" (ex. Giant Chitauri, Military veicles, ecc...)
 
 ```{r}
 scores %>% filter(str_detect(charater, regex("(Chitauri Giant)|(Pepper Potts)|(Fighter)|(Elicopter)"))) %>% kable()
 ```
 
-
 ---
+
+### Problems
+
+* Inappropriate algorith
+* data gathering and/or manipulation methods
+* "Cinematic Distorsion" (some charaters are too much "in the spotlight")
+* "Implicit Strenghts" (ex. Giant Chitauri, Military veicles, ecc...)
+
 
 ## Correlation Score-Fights
 
@@ -545,8 +539,6 @@ cor_score_fights %>%
   ) %>% kable()
 
 ```
-
----
 
 ## Correlation Score-Screen Time
 ### Screen Times
@@ -590,8 +582,6 @@ ggplot(data=cor_score_screen_time, mapping=aes(x=screen_time, y=score)) +
 ```
 
 (source screen times: https://www.youtube.com/watch?v=XE0HwXz43WQ)
-
----
 
 # Shiny App
 

@@ -103,11 +103,17 @@ ui <- fluidPage(
     # Main panel for displaying outputs ----
     mainPanel(
       
-      # Output: Text label  ----
-      textOutput(outputId = "myLabel"),
-      
-      # Output: Barplot ----
-      plotOutput(outputId = "myPlot")
+      # Output: Tabset w/ plot, summary, and table ----
+      tabsetPanel(type = "tabs",
+                  
+                  tabPanel("Summary", 
+                           
+                           h2(textOutput(outputId = "myMovie")), 
+                           h3(textOutput(outputId = "myScene"))
+                           ),
+                  tabPanel("Plot", plotOutput(outputId = "myPlot")),
+                  tabPanel("Table", tableOutput(outputId = "myTable"))
+      )
     )
     
   ),
@@ -125,16 +131,22 @@ server <- function(input, output) {
     # TODO ... 
   # })
   
-  output$myLabel <- renderText({ 
+  output$myMovie <- renderText({ 
+    
     fight <- fights_elo_format_s %>% filter(row_number()==input$time-1) %>% select(movie,comment)
     movie <- fight %>% {.[1,1]}
+    # comment <- fight %>% {.[1,2]}
+    
+    paste("", movie, sep="")
+  })
+  
+  output$myScene <- renderText({ 
+    
+    fight <- fights_elo_format_s %>% filter(row_number()==input$time-1) %>% select(movie,comment)
+    # movie <- fight %>% {.[1,1]}
     comment <- fight %>% {.[1,2]}
     
-    paste(
-      "Film:\t", movie, 
-      ",\tScena:\t", comment, 
-      sep=""
-      )
+    paste("", comment, sep="")
   })
   
   
@@ -166,8 +178,20 @@ server <- function(input, output) {
     
   })
   
+  output$myTable <- renderTable({
   
-  
+    # extract the scores at this specific time
+    s <- scores[, input$time]
+    # make it as tibble
+    st <- tibble::enframe(s) %>% rename(id=name, score=value) %>% filter(!is.na(score)) %>% arrange(-score)
+    # join with charater list
+    st <- st %>% left_join(charaters, by=c('id'))
+    
+    # charaters to print
+    ctp <- input$charaters
+    
+    st %>% head(n=ctp)
+  })
 }
 
 shinyApp(ui, server)
