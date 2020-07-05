@@ -582,12 +582,14 @@ cor(cor_score_screen_time$screen_time, cor_score_screen_time$score)
 
 # Shiny App
 
-TODO: LINK
+https://emanuelena49.shinyapps.io/avengers-elo-rating/
 
-## All links
+# Links and credits
 
-* git repo: https://github.com/emanuelena49/avengers-elo-ranting-R 
-* 
+## Project links
+
+* github: https://github.com/emanuelena49/avengers-elo-ranting-R
+* shiny:  https://emanuelena49.shinyapps.io/avengers-elo-rating/
 
 ## Data Sources
 

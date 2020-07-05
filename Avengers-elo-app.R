@@ -190,7 +190,7 @@ server <- function(input, output) {
       
       geom_bar(stat="identity") + 
       
-      ylim(min(st$score), max(st$score)) +
+      # ylim(min(st$score), max(st$score)) +
       
       ylab("ELO score") + xlab("Personaggio") + 
       
