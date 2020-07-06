@@ -5,9 +5,9 @@ account: emanuelena49
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2537991
-bundleId: 3354313
+bundleId: 3354323
 url: https://emanuelena49.shinyapps.io/avengers-elo-rating/
-when: 1593958379.99951
+when: 1593958679.92748
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: .RData

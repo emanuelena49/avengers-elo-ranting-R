@@ -302,6 +302,7 @@ all_characters_statistics %>% kable()
 
 ```
 
+# ELO Classification
 
 ## Prepare the dataframe for ELO
 
@@ -330,7 +331,11 @@ head(fights_tidy %>% select(winner_n, winner_character, loser_n, loser_character
   + m/n lines where White=winner, Black=loser, Score=1
   + (eventually) one line with White=winner, Black=loser and  $$Score=\frac{rest(\frac{m}{n})}{n} * 0.5 + 0.5$$
 * (Instead of character names, I should use IDs)
-  
+
+---
+
+![](img/problema adattamento dati elo.PNG)
+
 ---
 
 ### Dataset in ELO Format
@@ -408,7 +413,7 @@ fights_elo_format %>% select(White, winner, Black, loser, Score) %>%  kable()
     
 ```
 
-# ELO Classification
+
 
 ```{r}
 
@@ -496,13 +501,16 @@ ggplot(data=scores %>% head(n=10), mapping = aes(x=reorder(character, -score), y
 head(scores,n=5) %>% kable()
 ```
 
-
-![Something has gone wrong...](img/pepper fighter chitauri.jpg)
----
+## Inconsistencies
 
 ```{r}
 scores %>% filter(str_detect(character, regex("(Chitauri Giant)|(Pepper Potts)|(Fighter)|(Elicopter)"))) %>% kable()
 ```
+
+---
+
+![Something has gone wrong...](img/pepper fighter chitauri.jpg)
+
 
 ---
 
@@ -513,6 +521,7 @@ scores %>% filter(str_detect(character, regex("(Chitauri Giant)|(Pepper Potts)|(
 * "Cinematic Distorsion" (some characters are too much "in the spotlight")
 * "Implicit Strenghts" (ex. Giant Chitauri, Military veicles, ecc...)
 
+# Let's go deeper
 
 ## Correlation Score-Fights
 
@@ -550,8 +559,6 @@ cor_score_screen_time <- scores %>%
 
 head(cor_score_screen_time,n=5) %>% kable()
 ```
-
-
 
 ---
 
