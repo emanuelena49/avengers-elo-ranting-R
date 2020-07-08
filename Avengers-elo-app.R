@@ -48,10 +48,12 @@ elo_progressive = function(games, z = 400, k = 25) {
     update = k * (score - mu)
     
     # "carry on" old values
-    for(j in 1:n) {
+    # for(j in 1:n) {
       
-      r[j, i] = r[j, i-1]
-    }
+    #   r[j, i] = r[j, i-1]
+    # }
+    
+    r[, i] = r[, i-1]
     
     # update ratings
     r[white, i] = white_r + update
