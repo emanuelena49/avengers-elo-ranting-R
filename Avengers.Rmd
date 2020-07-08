@@ -104,7 +104,7 @@ raw_avengers_tibble <-
   mutate(id = row_number()) %>%
   select(id, everything())
 
-head(raw_avengers_tibble, n=10) %>% kable()
+head(raw_avengers_tibble, n=10) %>% head(5) %>% kable()
 ```
 
 ## The concept of fight
@@ -171,11 +171,17 @@ library(ggplot2)  # library for graphs
 -->
 
 ## Data Tiding
+### Standardize winner-loser labels + extract data
+
+![](img/tidy.png)
+
+---
+
 ### Operations
 
-* Separate rows with "character 1,character 2,..." into more partial victories (w 1/n "winning rate")
-* Turn values with singular characters into "1-character" 
-* separate pairs "n-characters" in 2 columns
+* Separate "character 1,character 2,..." into more partial victories (w 1/n "winning rate")
+* Turn single "charater" into "1-character" 
+* separate pairs "n-character" in 2 columns
 
 ---
 
@@ -229,12 +235,13 @@ fights_tidy <- raw_avengers_tibble_3 %>%
   # order columns
   select(id, winner_n, winner_character, loser_n, loser_character, movie, comment, terrain_winner, terrain_loser)
 
-fights_tidy %>% select(id, winner_n, winner_character, loser_n, loser_character) %>% kable()
+fights_tidy %>% select(id, winner_n, winner_character, loser_n, loser_character) %>%
+  head(5) %>% kable()
 
 ```
 
 
-## Character list + general statistics
+## Character list (+ win-lose count)
 
 ```{r}
 
@@ -297,7 +304,7 @@ all_characters_statistics <- fights_tidy %>%
   # order columns
   select(id, character,n_fights, n_win, n_lose)
 
-all_characters_statistics %>% kable()
+all_characters_statistics %>% head(5) %>% kable()
 
 
 ```
@@ -317,24 +324,28 @@ expected <- tibble(
 expected %>% kable()
 ```
 
+<!--
 ### Actual Dataset Format
 ```{r}
 head(fights_tidy %>% select(winner_n, winner_character, loser_n, loser_character), n=5) %>% kable()
 ```
+-->
 
 ---
 
 ### My Choices
 
-* Winner goes always in White, Loser goes always in Black => score will be always be a numbers in (0.5,1]
-* given n winners and m losers, I will have...
-  + m/n lines where White=winner, Black=loser, Score=1
-  + (eventually) one line with White=winner, Black=loser and  $$Score=\frac{rest(\frac{m}{n})}{n} * 0.5 + 0.5$$
+* Winner goes always in White, Loser goes always in Black => score will be always a numbers in (0.5,1]
+* given n winners and m losers, I break them in this way
+  + m/n lines with Score=1
+  + (eventually) one line with $$Score=\frac{rest(\frac{m}{n})}{n} * 0.5 + 0.5$$
 * (Instead of character names, I should use IDs)
 
 ---
 
-![](img/problema adattamento dati elo.PNG)
+![
+$$r=\frac{rest(\frac{m}{n})}{n} * 0.5 + 0.5$$
+](img/gestione tipi scontri.PNG)
 
 ---
 
@@ -409,7 +420,7 @@ fights_elo_format <- fights_elo_format_readable %>%
 # save the dataset (for shiny app)
 write.csv(fights_elo_format, "datasets/fights_elo_format.csv")
 
-fights_elo_format %>% select(White, winner, Black, loser, Score) %>%  kable()
+fights_elo_format %>% select(White, winner, Black, loser, Score) %>% head(5) %>% kable()
     
 ```
 
@@ -501,16 +512,16 @@ ggplot(data=scores %>% head(n=10), mapping = aes(x=reorder(character, -score), y
 head(scores,n=5) %>% kable()
 ```
 
+---
+
+![Something has gone wrong...](img/pepper fighter chitauri.jpg)
+
+
 ## Inconsistencies
 
 ```{r}
 scores %>% filter(str_detect(character, regex("(Chitauri Giant)|(Pepper Potts)|(Fighter)|(Elicopter)"))) %>% kable()
 ```
-
----
-
-![Something has gone wrong...](img/pepper fighter chitauri.jpg)
-
 
 ---
 
@@ -541,7 +552,7 @@ cor_score_fights %>%
   summarise(
     cor_score_tot=cor(score, n_fights), 
     cor_score_win=cor(score, n_win),
-    cor_score_lose=cor(score,n_lose)
+    cor_score_lose=cor(score,n_lose), 
   ) %>% kable()
 
 ```
